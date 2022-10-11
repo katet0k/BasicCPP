@@ -103,7 +103,10 @@ int main()
                             cout << " ";
                         }
                         for (int j = 0; j <= i; j++) {
-                            cout << "* ";
+                            cout << " *";
+                        }
+                        for (int k = 0; k <= b; k++) {
+                            cout << " ";
                         }
                         cout << endl;
                         b++;
@@ -115,7 +118,10 @@ int main()
                             cout << " ";
                         }
                         for (int k = 0; k <= e; k++) {
-                            cout << "* ";
+                            cout << " *";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << " ";
                         }
                         cout << endl;
                         e++;
@@ -124,37 +130,33 @@ int main()
                 }break;
                 case 6:
                 {
-                    for (int i = 1; i <= 10; i++) {
-                        for (int j = 1; j <= i; j++) {
-                            cout << "* ";
-                        }
-                        cout << endl;
-                    }
-                    for (int i = 10; i >= 1; i--) {
-                        for (int j = 1; j <= i; j++) {
-                            cout << "* ";
-                        }
-                        cout << endl;
-                    }
-                    for (int i = 1; i <= 11; i++) {
-                        for (int k = 0; k <= f * 2; k++) {
-                            cout << " ";
-                        }
-                        for (int j = 1; j < i; j++) {
-                            cout << "* ";
-                        }
-                        cout << endl;
-                        f--;
-                    }
                     for (int i = 10; i >= 0; i--) {
-                        for (int l = 0; l <= b * 2; l++) {
-                            cout << " ";
+                        for (int k = 0; k <= b; k++) {
+                            cout << " *";
                         }
                         for (int j = 0; j <= i; j++) {
-                            cout << "* ";
+                            cout << "    ";
+                        }
+                        for (int k = 0; k <= b; k++) {
+                            cout << " *";
                         }
                         cout << endl;
                         b++;
+                    }
+
+                    for (int i = 10; i >= 0; i--) {
+
+                        for (int j = 0; j <= i; j++) {
+                            cout << " *";
+                        }
+                        for (int k = 0; k <= e; k++) {
+                            cout << "    ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << " *";
+                        }
+                        cout << endl;
+                        e++;
                     }
                    
                 }break;
