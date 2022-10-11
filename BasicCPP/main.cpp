@@ -5,6 +5,9 @@ using namespace std;
 
 int main()
 {
+
+    setlocale(LC_ALL, "ru");
+
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     char switch_on;
     int start, end;
@@ -28,68 +31,219 @@ int main()
 
         }break;
 
-        case '1':
-        {
-            int col, row;
-            cout << "h->";
-            cin >> col;
-            cout << "w->";
-            cin >> row;
-            for (size_t i = 0; i < col; i++)
-            {
-                for (size_t j = 0; j < row; j++)
+        case '1': {
+
+
+            do {
+
+                int a = 0, b = 0, c = 0, d = 0, e = 0, f = 11;
+
+                int number;
+                cout << "введите число : ";
+                cin >> number;
+
+                switch (number)
                 {
-                    if (i < j)
-                    {
-                        cout << "  ";
+                case 1: {
+
+                    for (int i = 10; i >= 0; i--) {
+                        for (int l = 0; l <= b * 2; l++) {
+                            cout << " ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        b++;
                     }
-                    else {
-                        cout << "*  ";
+                } break;
+                case 2:{
+
+                    for (int i = 1; i <= 10; i++) {
+                        for (int j = 1; j < i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
                     }
+
+                }break;
+                case 3:
+                {
+                    for (int i = 10; i >= 0; i--) {
+                        for (int k = 0; k <= b; k++) {
+                            cout << " ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        b++;
+                    }
+                }break;
+
+                case 4:
+                {
+                    for (int i = 10; i >= 0; i--) {
+
+                        for (int j = 0; j <= i; j++) {
+                            cout << " ";
+                        }
+                        for (int k = 0; k <= a; k++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        a++;
+                    }
+                }break;
+
+                case 5:
+                {
+                    for (int i = 10; i >= 0; i--) {
+                        for (int k = 0; k <= b; k++) {
+                            cout << " ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        b++;
+                    }
+
+                    for (int i = 10; i >= 0; i--) {
+
+                        for (int j = 0; j <= i; j++) {
+                            cout << " ";
+                        }
+                        for (int k = 0; k <= e; k++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        e++;
+                    }
+                    
+                }break;
+                case 6:
+                {
+                    for (int i = 1; i <= 10; i++) {
+                        for (int j = 1; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                    }
+                    for (int i = 10; i >= 1; i--) {
+                        for (int j = 1; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                    }
+                    for (int i = 1; i <= 11; i++) {
+                        for (int k = 0; k <= f * 2; k++) {
+                            cout << " ";
+                        }
+                        for (int j = 1; j < i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        f--;
+                    }
+                    for (int i = 10; i >= 0; i--) {
+                        for (int l = 0; l <= b * 2; l++) {
+                            cout << " ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        b++;
+                    }
+                   
+                }break;
+
+                case 7:
+                {
+                    for (int i = 1; i <= 10; i++) {
+                        for (int j = 1; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                    }
+                    for (int i = 10; i >= 1; i--) {
+                        for (int j = 1; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                    }
+                }break;
+
+                case 8:
+                {
+                    for (int i = 1; i <= 11; i++) {
+                        for (int k = 0; k <= f * 2; k++) {
+                            cout << " ";
+                        }
+                        for (int j = 1; j < i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        f--;
+                    }
+                    for (int i = 10; i >= 0; i--) {
+                        for (int l = 0; l <= b * 2; l++) {
+                            cout << " ";
+                        }
+                        for (int j = 0; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        b++;
+                    }
+                }break;
+
+                case 9:
+                {
+                    for (int i = 10; i >= 1; i--) {
+                        for (int j = 1; j <= i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                    }
+                }break;
+
+                case 10: 
+                {
+                    for (int i = 1; i <= 10; i++) {
+                        for (int k = 0; k <= f * 2; k++) {
+                            cout << " ";
+                        }
+                        for (int j = 1; j < i; j++) {
+                            cout << "* ";
+                        }
+                        cout << endl;
+                        f--;
+                    }
+                }break;
+
+                default:
+                {
+                    if (number < 1 || number > 10) {
+                        cout << "ноу ноу ноу мистер фиш" << endl;
+                    }
+                }break;
                 }
-                cout << endl;
-            }
+            } while (true);
+
+
+        }
+
+        case 2: {
+
         }break;
 
-        case 2:
-        {
 
-            switch (switch_on)
-            {
-            case 'a':
-            {
-                int col = 22, row = 23;
-
-                cout << "h->";
-                cout << "w->";
-
-                for (int i = 0; i < col; i++)
-                {
-                    for (int j = 0; j < row; j++)
-                    {
-                        if (i < j)
-                        {
-                            cout << "  ";
-                        }
-                        else {
-                            cout << "*  ";
-                        }
-                    }
-                    cout << endl;
-                }
-                /*default:
-                    break;
-                }
-                */
-
-
-            }break;
-
-
-            }
-        }while (false);
-
-        return 0;
         }
-    }
+    } while (false);
+
+    return 0;
+}
+    
     
