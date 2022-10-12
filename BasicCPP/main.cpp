@@ -3,156 +3,174 @@
 using namespace std;
 int main()
 {
-    int numbr;
-    cin >> numbr;
-    cout << "" << endl;
-    switch (numbr)
-    {
-    case 1:
-    {
-        const int col = 5;
-        const int row = 5;
-        int arr_2[col][row];
+    do {
+        cout << "#>----------<MENU>----------<#" << endl;
+        cout << "|      1 - Task              |" << endl;
+        cout << "|      2 - Task              |" << endl;
+        cout << "|      3 - Task              |" << endl;
+        cout << "#>--------------------------<#" << endl;
+        cout << "|      0 - Exit              |" << endl;
+        cout << "#>--------------------------<#" << endl;
 
-        int sum = 0;
-        double a = 0;
-        for (size_t i = 0; i < col; i++)
+        int numbr;
+        cin >> numbr;
+        cout << "" << endl;
+
+        system("cls");
+
+        switch (numbr)
         {
-            for (size_t j = 0; j < row; j++)
-            {
-                arr_2[i][j] = rand() % 10;
-
-                cout << arr_2[i][j] << "\t";
-            }
-            cout << endl << endl;
-        }
-
-        for (size_t i = 0; i < col; i++)
+        case 1:
         {
-            for (size_t j = 0; j < row; j++)
+            const int col = 5;
+            const int row = 5;
+            int arr_2[col][row];
+
+            int sum = 0;
+            double a = 0;
+            for (size_t i = 0; i < col; i++)
             {
-                sum += arr_2[i][j];
-            }
-        }
-        cout << "Sum = " << sum << endl;
-
-
-        for (size_t i = 0; i < col; i++)
-        {
-
-            for (size_t j = 0; j < row; j++)
-            {
-                a = sum;
-            }
-
-        }
-        cout << "avg = " << a / 25 << endl;
-
-        int min, max;
-        min = max = arr_2[0][0];
-
-        for (size_t i = 0; i < col; i++)
-        {
-            for (size_t j = 0; j < row; j++)
-            {
-                if (min > arr_2[i][j])
+                for (size_t j = 0; j < row; j++)
                 {
-                    min = arr_2[i][j];
+                    arr_2[i][j] = rand() % 10;
 
+                    cout << arr_2[i][j] << "\t";
                 }
-                if (max < arr_2[i][j])
-                {
-                    max = arr_2[i][j];
+                cout << endl << endl;
+            }
 
+            for (size_t i = 0; i < col; i++)
+            {
+                for (size_t j = 0; j < row; j++)
+                {
+                    sum += arr_2[i][j];
                 }
             }
+            cout << "Sum = " << sum << endl;
 
 
-
-        }
-        cout << "min " << min << endl;
-        cout << "max " << max << endl;
-
-        cout << endl;
-        return 0;
-
-    }break;
-
-    case 2:
-    {
-        const int col = 5;
-        const int row = 5;
-        int arr_2[col][row];
-
-        for (size_t i = 0; i < col; i++)
-        {
-            for (size_t j = 0; j < row; j++)
+            for (size_t i = 0; i < col; i++)
             {
-                arr_2[i][j] = rand() % 10;
-            }
-        }
-        int sumH[col];
-        int sumV[row];
-        int sum,k=0;
 
-        for (size_t i = 0; i < col; i++)
-        {
-            sum = 0;
-            for (size_t j = 0; j < row; j++)
+                for (size_t j = 0; j < row; j++)
+                {
+                    a = sum;
+                }
+
+            }
+            cout << "avg = " << a / 25 << endl;
+
+            int min, max;
+            min = max = arr_2[0][0];
+
+            for (size_t i = 0; i < col; i++)
             {
-                sum += arr_2[i][j];
-            }
-            sumH[k] = sum;
-            k++;
-        }
-        k = 0;
-        for (size_t i = 0; i < col; i++)
-        {
-            sum = 0;
+                for (size_t j = 0; j < row; j++)
+                {
+                    if (min > arr_2[i][j])
+                    {
+                        min = arr_2[i][j];
 
-            for (size_t j = 0; j < row; j++)
+                    }
+                    if (max < arr_2[i][j])
+                    {
+                        max = arr_2[i][j];
+
+                    }
+                }
+
+
+
+            }
+            cout << "min " << min << endl;
+            cout << "max " << max << endl;
+
+            cout << endl;
+
+        }break;
+
+        case 2:
+        {
+
+            const int col = 3;
+            const int row = 4;
+
+            int arr_2[col][row];
+
+            for (size_t i = 0; i < col; i++)
             {
-                sum += arr_2[j][i];
+                for (size_t j = 0; j < row; j++)
+                {
+                    arr_2[i][j] = rand() % 10;
+                }
             }
-            sumV[k] = sum;
-            k++;
-        }
+            int sumH[col];
+            int sumV[row];
+            int sum, k = 0;
 
 
-        for (size_t i = 0; i < col; i++)
-        {
-            for (size_t j = 0; j < row; j++)
+            for (size_t i = 0; i < col; i++)
             {
-                cout << arr_2[i][j] << "\t";
+                sum = 0;
+                for (size_t j = 0; j < row; j++)
+                {
+                    sum += arr_2[i][j];
+                }
+                sumH[k] = sum;
+                k++;
             }
-            cout << "| " << sumH[i];
-            cout << endl << endl;
-        }
-        for (size_t i = 0; i < row; i++)
+            k = 0;
+
+            for (size_t i = 0; i < row; i++)
+            {
+                sum = 0;
+
+                for (size_t j = 0; j < col; j++)
+                {
+                    sum += arr_2[j][i];
+                }
+                sumV[k] = sum;
+                k++;
+            }
+
+            for (size_t i = 0; i < col; i++)
+            {
+                for (size_t j = 0; j < row; j++)
+                {
+                    cout << arr_2[i][j] << "\t";
+                }
+                cout << "| " << sumH[i];
+                cout << endl << endl;
+            }
+            for (size_t i = 0; i < row; i++)
+            {
+                cout << "---------";
+            }
+            cout << endl;
+
+            for (size_t i = 0; i < row; i++)
+            {
+                cout << sumV[i] << "\t";
+            }
+            cout << endl;
+
+
+        }break;
+
+
+        case 3:
         {
-            cout << "---------";
+
+
+        }break;
+
+
+
+        default: {
+
         }
-        cout << endl;
-
-        for (size_t i = 0; i < row; i++)
-        {
-            cout << sumV[i] << "\t";
         }
+    }while (true);
 
-        
-
-    }break;
-
-
-    case 3:
-    {
-
-    }break;
-
-
-
-    default:
-        break;
-    }
     return 0;
 }
