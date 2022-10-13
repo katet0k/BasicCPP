@@ -41,10 +41,19 @@ int main()
                 int number;
                 cout << "введите число : ";
                 cin >> number;
+                if (number == 0)
+                {
+                    cout << "" << endl;
+                    break;
+                }
 
                 switch (number)
                 {
-                case 1: {
+                    
+                 
+
+                case 1: 
+                {
 
                     for (int i = 10; i >= 0; i--) {
                         for (int l = 0; l <= b * 2; l++) {
@@ -57,7 +66,9 @@ int main()
                         b++;
                     }
                 } break;
-                case 2:{
+
+                case 2:
+                {
 
                     for (int i = 1; i <= 10; i++) {
                         for (int j = 1; j < i; j++) {
@@ -67,6 +78,7 @@ int main()
                     }
 
                 }break;
+
                 case 3:
                 {
                     for (int i = 10; i >= 0; i--) {
@@ -128,6 +140,7 @@ int main()
                     }
                     
                 }break;
+
                 case 6:
                 {
                     for (int i = 10; i >= 0; i--) {
@@ -225,25 +238,50 @@ int main()
                     }
                 }break;
 
+
                 default:
                 {
-                    if (number < 1 || number > 10) {
+                    if (number < 0 || number > 10) {
                         cout << "ноу ноу ноу мистер фиш" << endl;
                     }
+
                 }break;
                 }
             } while (true);
 
 
-        }
+        }break;
 
-        case 2: {
+        case '2': {
+
+            int a, n = 0, sum = 0, c = 0;
+            cout << "введите число ";
+            cin >> a;
+
+            for (int i = 0; i < a; i++)
+            {
+                if (a % 10 == 0)
+                    c++;
+                a /= 10;
+
+                cout << "количество нулей " << c << endl ;
+
+                for (n = 0; a > 0;)
+                {
+                    sum += a % 10;
+                    a /= 10;
+                    n++;
+                }
+                cout << "количествово цифр = " << n << endl;
+                cout << "sum = " << sum << endl;
+                cout << "среднее арифметическое = " << sum << endl;
+            }
 
         }break;
 
 
         }
-    } while (false);
+    } while (switch_on == '0');
 
     return 0;
 }
