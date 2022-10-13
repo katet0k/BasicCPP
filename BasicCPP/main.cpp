@@ -39,7 +39,7 @@ int main()
                 int a = 0, b = 0, c = 0, d = 0, e = 0, f = 11;
 
                 int number;
-                cout << "введите число : ";
+                cout << " введите число ";
                 cin >> number;
                 if (number == 0)
                 {
@@ -254,34 +254,64 @@ int main()
 
         case '2': {
 
-            int a, n = 0, sum = 0, c = 0;
-            cout << "введите число ";
-            cin >> a;
+            int a, cp, n = 0, sum = 0, c = 0;
 
-            for (int i = 0; i < a; i++)
+            cout << " введите число ";
+            cin >> a;
+            cp = a;
+
+            while (a)
             {
                 if (a % 10 == 0)
                     c++;
                 a /= 10;
-
-                cout << "количество нулей " << c << endl ;
-
-                for (n = 0; a > 0;)
-                {
-                    sum += a % 10;
-                    a /= 10;
-                    n++;
-                }
-                cout << "количествово цифр = " << n << endl;
-                cout << "sum = " << sum << endl;
-                cout << "среднее арифметическое = " << sum << endl;
             }
+            cout << " количество нулей = " << c << endl;
 
+            for (n = 0; cp > 0; n++)
+            {
+                sum += cp % 10;
+                cp /= 10;
+            }
+            cout << " количество цифр = " << n << endl;
+            cout << " сумма = " << sum << endl; 
+            cout << " среднее арифметическое = " << (double)sum / n << endl;
+
+
+
+        }break;
+
+        case '3':
+        {
+            int h, a = 3, w;
+
+            cout << " введите высоту шахматной доски";
+            cin >> h;
+            cout << " введите ширину шахматной доски";
+            cin >> w;
+
+            int i, jj, j, ii;
+            for (i = 0; i < h; i++)
+            {
+                for (jj = 0; jj < a; jj++)
+                {
+                    for (j = 0; j < w; j++)
+                    {
+                        for (ii = 0; ii < a; ii++)
+                        {
+                            (~(i + j) & 1) ? (cout << '-') : (cout << 'x');
+                        }
+                    }
+                    cout << endl;
+                }
+            }
+            cout << endl;
         }break;
 
 
         }
-    } while (switch_on == '0');
+    }
+    while (switch_on == '0');
 
     return 0;
 }
