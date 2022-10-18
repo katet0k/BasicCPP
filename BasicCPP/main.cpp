@@ -160,6 +160,42 @@ int main()
 
         case 3:
         {
+            const int col = 5;
+            const int row = 10;
+
+            const int col1 = 5;
+            const int row1 = 5;
+
+            int arr[col][row];
+
+            int arr1[col1][row1];
+            int c;
+            c = 0;
+            for (size_t i = 0; i < col; i++)
+            {
+                for (size_t j = 0; j < row; j++)
+                {
+                    arr[i][j] = rand() % 50;
+
+                    cout << arr[i][j] << "\t";
+                }
+                cout << endl << endl;
+            }
+
+            for (size_t i = 0; i < col1; i++)
+            {
+                for (size_t j = 0; j < row1; j++)
+                {
+                    
+                    c+= arr[i][j];
+                    cout << c << "\t";
+
+                }
+                cout << endl << endl;
+
+
+            }
+
 
 
         }break;
@@ -170,7 +206,7 @@ int main()
 
         }
         }
-    }while (true);
+    } while (true);
 
     return 0;
 }
