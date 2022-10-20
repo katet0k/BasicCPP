@@ -10,6 +10,21 @@ int main()
     setlocale(LC_ALL, "ru");
 
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+    do
+    {
+        system("pause");
+        system("cls");
+
+        cout << "#====================MENU=====================#" << endl;
+        cout << " |   1- выводится масив каждый елемент       |" << endl;
+        cout << " |    которого *= 2  кроме первого введеного |" << endl;
+        cout << " |    числа                                  |" << endl;
+        cout << " |                                           |" << endl;
+        cout << " |   2-выводится масив каждый елемент        |" << endl;
+        cout << " |    которого += 1 кроме первого введеного  |" << endl;
+        cout << " |    числа                                  |" << endl;
+        cout << " |                                           |" << endl;
+        cout << "#=============================================#" << endl;
 
     int num;
     cin >> num;
@@ -75,5 +90,6 @@ int main()
     default:
         break;
     }
+    } while (true);
     return 0;
 }
