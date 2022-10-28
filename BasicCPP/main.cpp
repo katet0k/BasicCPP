@@ -140,7 +140,7 @@ void Arifmet( int arr[], const int size, int n = 0 ,int sum = 0)
 
 	}
 	cout << endl;
-	cout << " \n Ñðåäíåå àðèôìåòè÷åñêîå = ";
+	cout << " \n Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ = ";
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 	cout << (double)sum / n << endl;
@@ -178,19 +178,19 @@ void KolElement( int arr[], const int size, int n = 0, int c = 0) {
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
 	cout << endl;
-	cout << " \n Êîëè÷åñòâî íóëåé = ";
+	cout << " \n ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½ÑƒÐ»ÐµÐ¹ = ";
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 	cout << c << endl;
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-	cout << " \n Êîëè÷åñòâî ïîëîæèòåëüíûõ ÷èñåë = ";
+	cout << " \n ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» = ";
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 	cout << plus << endl;
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-	cout << " \n Êîëè÷åñòâî îòðèöàòåëüíûõ ÷èñåë = ";
+	cout << " \n ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» = ";
 
 	SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 	cout << minys << endl;
@@ -294,23 +294,23 @@ int main()
 		system("cls");
 		cout << "    #=====================MENU====================#" << endl;
 		cout << "     |                                           | " << endl;
-		cout << "     |   1 - âû÷èñëÿåò ðàçíèöó â äíÿõ ìåæäó      |" << endl;
-		cout << "     |     ââåäåííûìè äàòàìè                     |" << endl;
+		cout << "     |   1 - Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÑÐµÑ‚ Ñ€Ð°Ð·Ð½Ð¸Ñ†Ñƒ Ð² Ð´Ð½ÑÑ… Ð¼ÐµÐ¶Ð´Ñƒ      |" << endl;
+		cout << "     |     Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ð¼Ð¸ Ð´Ð°Ñ‚Ð°Ð¼Ð¸                     |" << endl;
 		cout << "     |                                           |" << endl;
-		cout << "     |   2 - îïðåäåëÿåò ñðåäíåå àðèôìåòè÷åñêèõ   |" << endl;
-		cout << "     |     ýëåìåíòîâ ïåðåäàííîãî åé ìàññèâà.     |" << endl;
+		cout << "     |   2 - Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ ÑÑ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ…   |" << endl;
+		cout << "     |     ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¿ÐµÑ€ÐµÐ´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÐµÐ¹ Ð¼Ð°ÑÑÐ¸Ð²Ð°.     |" << endl;
 		cout << "     |                                           |" << endl;
-		cout << "     |   3 - îïðåäåëÿåò êîëè÷åñòâî ïîëîæèòåëüíûõ,|" << endl;
-		cout << "     |   îòðèöàòåëüíûõ è íóëåâûõ ýëåìåíòîâ       |" << endl;
-		cout << "     |   ïåðåäàííîãî åé ìàññèâà.                 |" << endl;
+		cout << "     |   3 - Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ…,|" << endl;
+		cout << "     |   Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð¸ Ð½ÑƒÐ»ÐµÐ²Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²       |" << endl;
+		cout << "     |   Ð¿ÐµÑ€ÐµÐ´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÐµÐ¹ Ð¼Ð°ÑÑÐ¸Ð²Ð°.                 |" << endl;
 		cout << "     |                                           |" << endl;
-		cout << "     |   4 - ïåðåãðóæåííûå ôóíêöèè (íó ïî÷òè)    |" << endl;
+		cout << "     |   4 - Ð¿ÐµÑ€ÐµÐ³Ñ€ÑƒÐ¶ÐµÐ½Ð½Ñ‹Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ (Ð½Ñƒ Ð¿Ð¾Ñ‡Ñ‚Ð¸)    |" << endl;
 		cout << "     |                                           |" << endl;
-		cout << "     |   0 - âûõîä                               |" << endl;
+		cout << "     |   0 - Ð²Ñ‹Ñ…Ð¾Ð´                               |" << endl;
 		cout << "     |                                           | " << endl;
 		cout << "    #============================================#" << endl;
 
-		cout << "\n Ââåäèòå ÷èñëî - > ";
+		cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ - > ";
 		switch_on = _getch();
 		system("cls");
 		cout << endl;
@@ -328,13 +328,13 @@ int main()
 
 
 
-			cout << " Ââåäèòå ïåðâûé äåíü: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð´ÐµÐ½ÑŒ: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> d2;
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-			cout << " Ââåäèòå ïåðâûé ìåñÿö: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð¼ÐµÑÑÑ†: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> m2;
@@ -346,10 +346,10 @@ int main()
 				{
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 4));
-					cout << " Îøèáêà ââåäèòå ÷èñëî îò 1 äî 12" << endl;
+					cout << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 12" << endl;
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-					cout << " Ââåäèòå ïåðâûé ìåñÿö: ";
+					cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð¼ÐµÑÑÑ†: ";
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 					cin >> m2;
@@ -357,20 +357,20 @@ int main()
 				}
 			}
 
-			cout << " Ââåäèòå ïåðâûé ãîä: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð³Ð¾Ð´: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> y2;
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
 
-			cout << " Ââåäèòå âòîðîé äåíü: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð´ÐµÐ½ÑŒ: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> d1;
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-			cout << " Ââåäèòå âòîðîé ìåñÿö: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼ÐµÑÑÑ†: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> m1;
@@ -383,11 +383,11 @@ int main()
 				{
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 4));
-					cout << " Îøèáêà ââåäèòå ÷èñëî îò 1 äî 12" << endl;
+					cout << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 12" << endl;
 
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
-					cout << " Ââåäèòå âòîðîé ìåñÿö: ";
+					cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼ÐµÑÑÑ†: ";
 
 					SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 					cin >> m1;
@@ -396,7 +396,7 @@ int main()
 				}
 			}
 
-			cout << " Ââåäèòå âòîðîé ãîä: ";
+			cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð³Ð¾Ð´: ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 2));
 			cin >> y1;
@@ -405,10 +405,10 @@ int main()
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
 
-			cout << " \n Ðàçíîñòü â äíÿõ ìåæäó ýòèìè äàòàìè ñîñòàâëÿåò ";
+			cout << " \n Ð Ð°Ð·Ð½Ð¾ÑÑ‚ÑŒ Ð² Ð´Ð½ÑÑ… Ð¼ÐµÐ¶Ð´Ñƒ ÑÑ‚Ð¸Ð¼Ð¸ Ð´Ð°Ñ‚Ð°Ð¼Ð¸ ÑÐ¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ ";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 10));
-			cout << Difference(d1, d2, m1, m2, y1, y2) << " äíåé.\n";
+			cout << Difference(d1, d2, m1, m2, y1, y2) << " Ð´Ð½ÐµÐ¹.\n";
 
 			SetConsoleTextAttribute(handle, WORD(0 << 0 | 7));
 
