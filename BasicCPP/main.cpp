@@ -170,7 +170,7 @@ void KolElement( int arr[], const int size, int n = 0, int c = 0) {
 	    else if (arr[i] < 0) {
 			minys++;
 		}
-		if (arr[i] % 10 == 0) {
+		if (arr[i] == 0) {
 			c++;
 		}
 		arr[i] /= 10;
