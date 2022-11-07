@@ -58,16 +58,16 @@ int main()
         system("cls");
         cout << "    #=====================MENU====================#" << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   1 - íàõîæäåíèå íàèáîëüøåãî îáùåãî       | " << endl;
-        cout << "     |     äåëèòåëÿ äâóõ öåëûõ ÷èñåë.            | " << endl;
+        cout << "     |   1 - Ð½Ð°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐµÐ³Ð¾ Ð¾Ð±Ñ‰ÐµÐ³Ð¾       | " << endl;
+        cout << "     |     Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»Ñ Ð´Ð²ÑƒÑ… Ñ†ÐµÐ»Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ».            | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   2 - èãðà «áûêè è êîðîâû»                | " << endl;
+        cout << "     |   2 - Ð¸Ð³Ñ€Ð° Â«Ð±Ñ‹ÐºÐ¸ Ð¸ ÐºÐ¾Ñ€Ð¾Ð²Ñ‹Â»                | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #==============================================#" << endl;
-        cout << "     |   0 - Âûõîä                               |" << endl;
+        cout << "     |   0 - Ð’Ñ‹Ñ…Ð¾Ð´                               |" << endl;
         cout << "    #==============================================#" << endl;
 
-        cout << "\n Ââåäèòå ÷èñëî - > ";
+        cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ - > ";
         switch_on = _getch();
         system("cls");
         cout << endl;
@@ -81,16 +81,16 @@ int main()
         case '1': {
 
             int a, b;
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> a;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> b;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
             cout << endl;
-            cout << " Ñàìûé îáùèé äåëèòåëü äâóõ ââåäåííûõ ÷èñåë --> ";
+            cout << " Ð¡Ð°Ð¼Ñ‹Ð¹ Ð¾Ð±Ñ‰Ð¸Ð¹ Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð´Ð²ÑƒÑ… Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cout << NOD(a, b) << endl;
 
@@ -110,7 +110,7 @@ int main()
             GetRandomNumber(numbers[0]);
 
             while (true) {
-                cout << "  Êàêîå ÷èñëî ÿ çàãàäàë? : ";
+                cout << "  ÐšÐ°ÐºÐ¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ñ Ð·Ð°Ð³Ð°Ð´Ð°Ð»? : ";
                 memset(numbers[1], '\0', 5);
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                 cin >> numbers[1];
@@ -118,11 +118,11 @@ int main()
                
                 if (CheckAnswer(numbers, bulls, cows)) {
                     cout << endl;
-                    cout << " Âñå ïðàâèëüíî, Âû óãàäàëè çà : ";
+                    cout << " Ð’ÑÐµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾, Ð’Ñ‹ ÑƒÐ³Ð°Ð´Ð°Ð»Ð¸ Ð·Ð° : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 1));
                     cout << a; 
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " ïîïûòîê " << endl;
+                    cout << " Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº " << endl;
 
                     cout << endl << endl;
                     cout << " ";
@@ -135,11 +135,11 @@ int main()
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cout << " " << bulls;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " áûêè ";
+                    cout << " Ð±Ñ‹ÐºÐ¸ ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 6));
                     cout << cows;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " êîðîâû" << endl;
+                    cout << " ÐºÐ¾Ñ€Ð¾Ð²Ñ‹" << endl;
                     a++;
                     
                 }
