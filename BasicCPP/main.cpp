@@ -17,10 +17,10 @@ int main()
         cout << "     |                                           | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #==============================================#" << endl;
-        cout << "     |   0 - Выход                               |" << endl;
+        cout << "     |   0 - Exit                                |" << endl;
         cout << "    #==============================================#" << endl;
 
-        cout << "\n Введите число - > ";
+        cout << "\n --> ";
         switch_on = _getch();
         system("cls");
         cout << endl;
