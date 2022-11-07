@@ -391,26 +391,26 @@ int main()
         system("cls");
         cout << "    #=====================MENU====================#" << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   1 - íàõîæäåíèå ñòåïåíè ÷èñëà.           | " << endl;
+        cout << "     |   1 - Ð½Ð°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ Ñ‡Ð¸ÑÐ»Ð°.           | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   2 - âûâîäèò N çâåçä â ðÿä.              | " << endl;
+        cout << "     |   2 - Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ N Ð·Ð²ÐµÐ·Ð´ Ð² Ñ€ÑÐ´.              | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   3 - âû÷èñëÿåò ñóììó âñåõ ÷èñåë â        | " << endl;
-        cout << "     |      äèàïàçîíå.                           | " << endl;
+        cout << "     |   3 - Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÑÐµÑ‚ ÑÑƒÐ¼Ð¼Ñƒ Ð²ÑÐµÑ… Ñ‡Ð¸ÑÐµÐ» Ð²        | " << endl;
+        cout << "     |      Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ðµ.                           | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   4 - íàõîäèò ïîçèöèþ, ñ êîòîðîé          | " << endl;
-        cout << "     |      íà÷èíàåòñÿ ïîñëåäîâàòåëüíîñòü èç 10  | " << endl;
-        cout << "     |      ÷èñåë, ñóììà êîòîðûõ ìèíèìàëüíà.     | " << endl;
+        cout << "     |   4 - Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ, Ñ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹          | " << endl;
+        cout << "     |      Ð½Ð°Ñ‡Ð¸Ð½Ð°ÐµÑ‚ÑÑ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð¸Ð· 10  | " << endl;
+        cout << "     |      Ñ‡Ð¸ÑÐµÐ», ÑÑƒÐ¼Ð¼Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°.     | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   5 - òàì âñå îïèñàííî)                   | " << endl;
+        cout << "     |   5 - Ñ‚Ð°Ð¼ Ð²ÑÐµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð½Ð¾)                   | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   6 - òàì âñå îïèñàííî)                   | " << endl;
+        cout << "     |   6 - Ñ‚Ð°Ð¼ Ð²ÑÐµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð½Ð¾)                   | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #==============================================#" << endl;
-        cout << "     |   0 - Âûõîä                               |" << endl;
+        cout << "     |   0 - Ð’Ñ‹Ñ…Ð¾Ð´                               |" << endl;
         cout << "    #==============================================#" << endl;
 
-        cout << "\n Ââåäèòå ÷èñëî - > ";
+        cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ - > ";
         switch_on = _getch();
         system("cls");
         cout << endl;
@@ -426,12 +426,12 @@ int main()
         {
             double X;
             int N;
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> X;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
-            cout << " Ââåäèòå ñòåïåíü --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> N;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -462,7 +462,7 @@ int main()
         {
             int X;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> X;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -481,12 +481,12 @@ int main()
             int X;
             int N;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> X;
 
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-            cout << " Ââåäèòå ÷èñëî --> ";
+            cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ --> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
             cin >> N;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -526,20 +526,20 @@ int main()
                 system("cls");
                 cout << "        #================MENU================#" << endl;
                 cout << "         |                                  |" << endl;
-                cout << "         |   1 -ìàêñèìàëüíîå çíà÷åíèå â     |" << endl;
-                cout << "         |     îäíîìåðíîì ìàññèâå           |" << endl;
+                cout << "         |   1 -Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²     |" << endl;
+                cout << "         |     Ð¾Ð´Ð½Ð¾Ð¼ÐµÑ€Ð½Ð¾Ð¼ Ð¼Ð°ÑÑÐ¸Ð²Ðµ           |" << endl;
                 cout << "         |                                  |" << endl;
-                cout << "         |   2 - ìàêñèìàëüíîå çíà÷åíèå â    |" << endl;
-                cout << "         |     äâóìåðíîì ìàññèâå            |" << endl;
+                cout << "         |   2 - Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²    |" << endl;
+                cout << "         |     Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ð¾Ð¼ Ð¼Ð°ÑÑÐ¸Ð²Ðµ            |" << endl;
                 cout << "         |                                  |" << endl;
-                cout << "         |   3 - ìàêñèìàëüíîå çíà÷åíèå â    |" << endl;
-                cout << "         |     òðåõìåðíîì ìàññèâå           |" << endl;
+                cout << "         |   3 - Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²    |" << endl;
+                cout << "         |     Ñ‚Ñ€ÐµÑ…Ð¼ÐµÑ€Ð½Ð¾Ð¼ Ð¼Ð°ÑÑÐ¸Ð²Ðµ           |" << endl;
                 cout << "         |                                  |" << endl;
                 cout << "        #====================================#" << endl;
-                cout << "         |   0 - Âåðíóòñÿ â ãëàâíîå ìåíþ    |" << endl;
+                cout << "         |   0 - Ð’ÐµÑ€Ð½ÑƒÑ‚ÑÑ Ð² Ð³Ð»Ð°Ð²Ð½Ð¾Ðµ Ð¼ÐµÐ½ÑŽ    |" << endl;
                 cout << "        #====================================#" << endl;
 
-                cout << "\n Ââåäèòå ÷èñëî - > ";
+                cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ - > ";
                 switch_on1 = _getch();
                 system("cls");
                 switch (switch_on1)
@@ -614,14 +614,14 @@ int main()
                 system("cls");
                 cout << "        #================MENU================#" << endl;
                 cout << "         |                                  |" << endl;
-                cout << "         |   1 - Íàõîæäåíèå ìàêñèìàëüíîãî   |" << endl;
-                cout << "         |     çíà÷åíèÿ äâóõ öåëûõ.         |" << endl;
+                cout << "         |   1 - ÐÐ°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾   |" << endl;
+                cout << "         |     Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð´Ð²ÑƒÑ… Ñ†ÐµÐ»Ñ‹Ñ….         |" << endl;
                 cout << "         |                                  |" << endl;
-                cout << "         |   2 - Íàõîæäåíèå ìàêñèìàëüíîãî   |" << endl;
-                cout << "         |     çíà÷åíèÿ òðåõ öåëûõ.         |" << endl;
+                cout << "         |   2 - ÐÐ°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾   |" << endl;
+                cout << "         |     Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ñ‚Ñ€ÐµÑ… Ñ†ÐµÐ»Ñ‹Ñ….         |" << endl;
                 cout << "         |                                  |" << endl;
                 cout << "        #====================================#" << endl;
-                cout << "         |   0 - Âåðíóòñÿ â ãëàâíîå ìåíþ    |" << endl;
+                cout << "         |   0 - Ð’ÐµÑ€Ð½ÑƒÑ‚ÑÑ Ð² Ð³Ð»Ð°Ð²Ð½Ð¾Ðµ Ð¼ÐµÐ½ÑŽ    |" << endl;
                 cout << "        #====================================#" << endl;
                 switch_on2 = _getch();
                 system("cls");
@@ -637,11 +637,11 @@ int main()
                     float a, b, c;
                     cout << endl;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " Ââåäèòå ÷èñëî : ";
+                    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cin >> a;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " Ââåäèòå ÷èñëî : ";
+                    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cin >> b;
 
@@ -650,7 +650,7 @@ int main()
                     cout << " ------------------------" << endl << endl;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
-                    cout << " Ìàêñèìàëüíîå ÷èñëî : ";
+                    cout << " ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 1));
                     cout << Max(a, b) << endl << endl;
 
@@ -666,15 +666,15 @@ int main()
                     float a, b, c, d;
                     cout << endl;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " Ââåäèòå ÷èñëî : ";
+                    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cin >> a;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " Ââåäèòå ÷èñëî : ";
+                    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cin >> b;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-                    cout << " Ââåäèòå ÷èñëî : ";
+                    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 3));
                     cin >> c;
                     cout << endl;
@@ -683,7 +683,7 @@ int main()
                     cout << " ------------------------" << endl << endl;
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
-                    cout << " Ìàêñèìàëüíîå ÷èñëî : ";
+                    cout << " ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
                     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 1));
                     cout << Max(a, b, c) << endl << endl;
 
