@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <conio.h>
 #include <Windows.h>
@@ -30,6 +31,42 @@ int main()
         case '0': {
             break;
         }break;
+
+        case '1':
+        {
+            char str[25];
+            cout << "Enter text: ";
+            gets_s(str);
+            cout << "Origen: " << str << endl;
+            for (size_t i = 0; i < strlen(str); i++)
+            {
+                if (str[i] == ' ') {
+                    str[i] = '\t';
+                }
+            }
+            cout << "Modificate: " << str << endl;
+
+        }break;
+        case '2':
+        {
+            try
+            {
+                char* prefix = new char[10] {"Text is: "};
+                char str_1[25];
+                cout << "Enter text: ";
+                gets_s(str_1);
+                strcat(str_1, "\0");
+                strcat(prefix, str_1);
+                cout << prefix << endl;
+            }
+            catch (std::exception ex)
+            {
+                cout << ex.what() << endl;
+            }
+
+
+        } break;
+
 
 
         default:
