@@ -45,7 +45,7 @@ int main()
                 }
             }
             cout << "Modificate: " << str << endl;
-
+            system("pause");
         }break;
         case '2':
         {
@@ -63,7 +63,7 @@ int main()
             {
                 cout << ex.what() << endl;
             }
-
+            system("pause");
 
         } break;
 
