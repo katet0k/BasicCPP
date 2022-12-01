@@ -2,6 +2,26 @@
 #include <conio.h>
 #include <Windows.h>
 using namespace std;
+int mystrlen(const char* str)
+{
+    int size = 0;
+    for (size_t i = 0; str[i] != '\0'; i++)
+    {
+        size++;
+    }
+    return size;
+}
+char* mystrcpy(char* str1, const char* str2)
+{
+    int size = mystrlen(str2);
+    str1 = new char[size + 1];
+    for (size_t i = 0; i < size; i++)
+    {
+        str1[i] = str2[i];
+    }
+    str1[size] = '\0';
+    return str1;
+}
 
 int main()
 {
@@ -30,6 +50,26 @@ int main()
         case '0': {
             break;
         }break;
+
+        case '1':
+        {
+            char str[] = "Hello";
+            cout << str << endl;
+            cout << "str = " << mystrlen(str) << endl;
+            system("pause");
+
+        }break;
+        case '2':
+        {
+            char str1[] = "Hello!";
+            char str2[] = "World!";
+            cout << "str1 --> " << str1 << endl;
+            cout << "str2 --> " << str2 << endl;
+            cout << "str1 --> " << mystrcpy(str1, str2) << endl;
+            cout << "str2 --> " << str2 << endl;
+            system("pause");
+
+        }
 
 
         default:
