@@ -1,7 +1,34 @@
 #include <iostream>
 #include <conio.h>
+#include <cmath>
 #include <Windows.h>
+#include <algorithm>
+#include <vector>
 using namespace std;
+
+uint64_t global_id = 0;
+struct Surname {
+
+    bool is_empty_entity = true;
+    string surname;
+
+    void Input()
+    {
+        cout << " Surname --> "; cin >> surname;
+        is_empty_entity = false;
+    }
+    void Output()
+    {
+        if (is_empty_entity == false)
+        {
+
+            cout << " Surname --> " << surname;
+        }
+        else {
+            cout << "Empty entity!" << endl;
+        }
+    }
+};
 
 int main()
 {
@@ -30,8 +57,34 @@ int main()
         case '0': {
             break;
         }break;
+        case '1':
+        {
+            uint32_t size = 5;
+            string* surname = new string[size];
 
+            for (size_t i = 0; i < size; i++)
+            {
 
+                cin >> surname[i];
+                cout << endl;
+            }
+            system("pause");
+            system("cls");
+
+            sort(surname, surname + size);
+            for (size_t i = 0; i < size; i++)
+            {
+                cout << i << " - ";
+                cout << surname[i] << endl;
+                cout << endl;
+            }
+            system("pause");
+
+        }break;
+        case '2':
+        {
+
+        }break;
         default:
             break;
         }
