@@ -2,33 +2,31 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 int main()
 {
     char path[] = "file.txt";
     char text_p[255];
-    FILE* file; //w r a wb rb   
-    //fgets - отримує строку  
-    //fputs - запис строки  
-    //fgetc - отримує 1 символ  
-    //fputc - запис 1 символ  
-    //fscanf - fprintf   
+    FILE* file; //w r a wb rb     
+    //fgets - РѕС‚СЂРёРјСѓС” СЃС‚СЂРѕРєСѓ   
+    //fputs - Р·Р°РїРёСЃ СЃС‚СЂРѕРєРё   
+    //fgetc - РѕС‚СЂРёРјСѓС” 1 СЃРёРјРІРѕР»  
+    //fputc - Р·Р°РїРёСЃ 1 СЃРёРјРІРѕР»   
+    //fscanf - fprintf  
     string text, _mode;
-
-    do {
+    do    {
         system("cls");
         cout << "File mode: " << endl;
         cout << "w - write " << endl;
         cout << "r - read " << endl;
         cout << "a - append " << endl;
-        do {
+        do        {
             cout << "Input (w,r,a): ";
             cin >> _mode;
             if (_mode[0] == 'w' || _mode[0] == 'r' || _mode[0] == 'a')
             {
                 break;
             }
-            else {
+            else            {
                 cout << "Error! Incorrect file mode!" << endl;
             }
         } while (true);
@@ -37,7 +35,7 @@ int main()
         {
             perror("Error occured while opening.txt");
         }
-        else {
+        else        {
             switch (_mode[0])
             {
             case 'w':
@@ -66,6 +64,5 @@ int main()
         }
         system("pause");
     } while (true);
-
     return 0;
 }
