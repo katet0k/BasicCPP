@@ -16,42 +16,42 @@ struct Washing_machine
     void Output() {
         HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-        cout << " ô³ðìà";
+        cout << " Ñ„Ñ–Ñ€Ð¼Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << ".................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << company << endl;
-        cout << " êîë³ð";
+        cout << " ÐºÐ¾Ð»Ñ–Ñ€";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << ".................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << color << endl;
-        cout << " øèðèíà";
+        cout << " ÑˆÐ¸Ñ€Ð¸Ð½Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-        cout << width << "ñì" << endl;
-        cout << " äîâæèíà";
+        cout << width << "ÑÐ¼" << endl;
+        cout << " Ð´Ð¾Ð²Ð¶Ð¸Ð½Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................................ ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-        cout << length << "ñì" << endl;
-        cout << " âèñîòà";
+        cout << length << "ÑÐ¼" << endl;
+        cout << " Ð²Ð¸ÑÐ¾Ñ‚Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-        cout << height << "ñì" << endl;
-        cout << " ïîòóæí³ñòü";
+        cout << height << "ÑÐ¼" << endl;
+        cout << " Ð¿Ð¾Ñ‚ÑƒÐ¶Ð½Ñ–ÑÑ‚ÑŒ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "............................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << power << endl;
-        cout << " øâèäê³ñòü â³äæèìó";
+        cout << " ÑˆÐ²Ð¸Ð´ÐºÑ–ÑÑ‚ÑŒ Ð²Ñ–Ð´Ð¶Ð¸Ð¼Ñƒ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "...................... ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << spin_speed << endl;
-        cout << " òåìïåðàòóðà íàãð³âó";
+        cout << " Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð½Ð°Ð³Ñ€Ñ–Ð²Ñƒ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << ".................... ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -60,13 +60,13 @@ struct Washing_machine
     }
     void Input() {
         company = "Gorenje";
-        color = "Á³ëèé";
+        color = "Ð‘Ñ–Ð»Ð¸Ð¹";
         width = 59.5;
         length = 46;
         height = 85;
-        power = "165 êÂò / ð³ê ";
-        spin_speed = "1000 îá / õâ";
-        heating_temperature = "90°C";
+        power = "165 ÐºÐ’Ñ‚ / Ñ€Ñ–Ðº ";
+        spin_speed = "1000 Ð¾Ð± / Ñ…Ð²";
+        heating_temperature = "90Â°C";
     }
 
 };
@@ -83,37 +83,37 @@ struct Iron
     void Output() {
         HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-        cout << " ô³ðìà";
+        cout << " Ñ„Ñ–Ñ€Ð¼Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << ".................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << firm << endl;
-        cout << " ìîäåëü";
+        cout << " Ð¼Ð¾Ð´ÐµÐ»ÑŒ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << model << endl;
-        cout << " êîë³ð";
+        cout << " ÐºÐ¾Ð»Ñ–Ñ€";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << ".................................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << color << endl;
-        cout << " ì³í³ìàëüíà òåìïåðàòóðà";
+        cout << " Ð¼Ñ–Ð½Ñ–Ð¼Ð°Ð»ÑŒÐ½Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << minimal << endl;
-        cout << " ìàêñèìàëüíà òåìïåðàòóðà";
+        cout << " Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð° Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................ ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << maximum << endl;
-        cout << " ïîäà÷à ïàðè òàê / í³";
+        cout << " Ð¿Ð¾Ð´Ð°Ñ‡Ð° Ð¿Ð°Ñ€Ð¸ Ñ‚Ð°Ðº / Ð½Ñ–";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "................... ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
         cout << steam << endl;
-        cout << " ïîòóæí³ñòü";
+        cout << " Ð¿Ð¾Ñ‚ÑƒÐ¶Ð½Ñ–ÑÑ‚ÑŒ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
         cout << "............................. ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -123,11 +123,11 @@ struct Iron
     void Input() {
         firm = "TEFAL";
         model = "Easygliss Plus FV5718E0";
-        color = "Á³ëèé/áëàêèòíèé";
-        minimal = "20°C";
-        maximum = "80°C";
-        steam = "òàê";
-        power = "2500 Âò";
+        color = "Ð‘Ñ–Ð»Ð¸Ð¹/Ð±Ð»Ð°ÐºÐ¸Ñ‚Ð½Ð¸Ð¹";
+        minimal = "20Â°C";
+        maximum = "80Â°C";
+        steam = "Ñ‚Ð°Ðº";
+        power = "2500 Ð’Ñ‚";
     }
 
 };
@@ -139,29 +139,29 @@ struct Boiler
     string amount;
     string heating_temperature;
     void Output() {
-        cout << "ô³ðìà";
+        cout << "Ñ„Ñ–Ñ€Ð¼Ð°";
         cout << ".................................. ";
         cout << firm << endl;
-        cout << "êîë³ð";
+        cout << "ÐºÐ¾Ð»Ñ–Ñ€";
         cout << "...................................";
         cout << color << endl;
-        cout << "ïîòóæí³ñòü";
+        cout << "Ð¿Ð¾Ñ‚ÑƒÐ¶Ð½Ñ–ÑÑ‚ÑŒ";
         cout << "..............................";
         cout << power << endl;
-        cout << "îáñÿã";
+        cout << "Ð¾Ð±ÑÑÐ³";
         cout << "...................................";
         cout << amount << endl;
-        cout << "òåìïåðàòóðà íàãð³âó";
+        cout << "Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ð½Ð°Ð³Ñ€Ñ–Ð²Ñƒ";
         cout << ".....................";
         cout << heating_temperature << endl;
             
     }
     void Input() {
         firm = "Banzai";
-        color = "á³ëèé";
-        power = "2 (1 +1) Âò";
-        amount = "30 ë";
-        heating_temperature = "75 Ñ°";
+        color = "Ð±Ñ–Ð»Ð¸Ð¹";
+        power = "2 (1 +1) Ð’Ñ‚";
+        amount = "30 Ð»";
+        heating_temperature = "75 Ð¡Â°";
     }
 
 };
@@ -179,11 +179,11 @@ int main()
         system("cls");
         cout << "    #=====================MENU====================#" << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   1 - Ïðàëüíà ìàøèíêà                     | " << endl;
+        cout << "     |   1 - ÐŸÑ€Ð°Ð»ÑŒÐ½Ð° Ð¼Ð°ÑˆÐ¸Ð½ÐºÐ°                     | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   2 - Ïðàñêà                              | " << endl;
+        cout << "     |   2 - ÐŸÑ€Ð°ÑÐºÐ°                              | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |   3 - Áîéëåð                              | " << endl;
+        cout << "     |   3 - Ð‘Ð¾Ð¹Ð»ÐµÑ€                              | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #=============================================#" << endl;
         cout << "     |   0 - Exit                                |" << endl;
@@ -201,7 +201,7 @@ int main()
         }break;
         case '1':
         {
-            cout << "     Ïðàëüíà ìàøèíêà" << endl;
+            cout << "     ÐŸÑ€Ð°Ð»ÑŒÐ½Ð° Ð¼Ð°ÑˆÐ¸Ð½ÐºÐ°" << endl;
             Washing_machine* W = new Washing_machine;
             W->Input();
             W->Output();
@@ -214,7 +214,7 @@ int main()
         }break;
         case '2':
         {
-            cout << "     Ïðàñêà" << endl;
+            cout << "     ÐŸÑ€Ð°ÑÐºÐ°" << endl;
             Iron* I = new Iron;
             I->Input();
             I->Output();
@@ -227,7 +227,7 @@ int main()
         }break;
         case '3':
         {
-            cout << "     Áîéëåð" << endl;
+            cout << "     Ð‘Ð¾Ð¹Ð»ÐµÑ€" << endl;
             Boiler* B = new Boiler;
             B->Input();
             B->Output();
