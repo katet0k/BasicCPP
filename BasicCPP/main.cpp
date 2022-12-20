@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <Windows.h>
+#include <string>
 using namespace std;
 int mystrlen(const char* str)
 {
@@ -53,22 +54,34 @@ char* mystrchr(char* str, char s) {
     return 0;
 }
 char* mystrstr(char* str1, char* str2) {
+    uint32_t index;
     int size1 = mystrlen(str1);
     int size2 = mystrlen(str2);
-
-    for (size_t i = 0; i < size1; i++)
+    for (size_t i = 0, j = 0; i < strlen(str1); i++)
     {
-
-        if (str1[i] = str2[i]) {
-
-            for (size_t j = 0; j < size2; j++)
+        if (str1[i] == str2[j])
+        {
+            index = i;
+            for (; j < strlen(str2); j++)
             {
+                if (str1[index] != str2[j])
+                {
+                    break;
+                }
+                else {
+                    cout << str2 << " " << str1 << endl;
 
+                }
+                index++;
             }
         }
+        else {
+            cout << "0" << endl;
+            return 0;
+            break;
+        }
+       
     }
-
-    return 0;
 }
 
 int main()
@@ -118,7 +131,6 @@ int main()
             system("pause");
 
         }break;
-
         case '3':
         {
             char str1[] = "Hello!";
@@ -128,7 +140,6 @@ int main()
             cout << "str1 --> " << mystrcat(str1, str2) << endl;
             system("pause");
         }break;
-
         case '4':
         {
             char* str = new char[7] {"Hello"};
@@ -148,7 +159,12 @@ int main()
 
         case '5':
         {
-
+            char* str1 = new char[17] {"ho "};
+            char* str2 = new char[17] {"Hello world"};
+            cout << "str1 --> " << str1 << endl;
+            cout << "str2 --> " << str2 << endl;
+            mystrstr(str1, str2);
+            system("pause");
         }break;
         default:
             break;
