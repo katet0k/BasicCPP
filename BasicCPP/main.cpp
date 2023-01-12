@@ -1,42 +1,41 @@
 #include <iostream>
-#include <conio.h>
-#include <Windows.h>
+#include <fstream>
+#include <string>
+#include "file_work.h"
 using namespace std;
-
 int main()
 {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-
-    setlocale(LC_ALL, "ru");
-    char switch_on;
+    int mode;
+    string text;
+    FileWork* file_work = new FileWork();
+    file_work->file_path = "file.txt";
     do
     {
-        system("cls");
-        cout << "    #=====================MENU====================#" << endl;
-        cout << "     |                                           | " << endl;
-        cout << "     |                                           | " << endl;
-        cout << "    #=============================================#" << endl;
-        cout << "     |   0 - Exit                                |" << endl;
-        cout << "    #=============================================#" << endl;
-
-        cout << "\n --> ";
-        switch_on = _getch();
-        system("cls");
-        cout << endl;
-
-        switch (switch_on)
+        cout << "Mode: \n1 - read\n2 - write\n3 - append\n->";
+        cin >> mode;
+        cin.ignore();
+        switch (mode)
         {
-        case '0': {
-            break;
+        case 1: {
+            file_work->_open_mode = ios::in;
+            text = file_work->readFromFile();
+            cout << "Text: " << text << endl;
         }break;
-
-
+        case 2: {
+            cout << "Text: ";
+            getline(cin, text);
+            file_work->_open_mode = ios::out;
+            file_work->writeToFile(text);
+        }break;
+        case 3: {
+            cout << "Text: ";
+            getline(cin, text);
+            file_work->_open_mode = ios::app;
+            file_work->appendToFile(text);
+        }break;
         default:
             break;
         }
-    
-    } while (switch_on != '0');
-
-	return 0;
+    } while (true);
+    return 0;
 }
