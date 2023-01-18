@@ -18,10 +18,12 @@ int StringToNumber(char* str) {
     return 0;
 }
 
-char* NumberToString(int number) {
-    char str1[256] = {"я не док≥нц€ зрозум≥ла €к це делать, ну допустим "};
-    cout << number;
-    return str1;
+char NumberToString(string str) {
+    cout << "I am a string " << str << endl;
+
+    int num = stoi(str);
+    cout << "I am an int " << num << endl;
+    return 0;
 }
 char* Uppercase(char* str1) {
     char A = 65;
@@ -127,10 +129,8 @@ int main()
         }break;
         case '3':
         {
-            int number;
-            cout << "¬вед≥ть строку --> ";
-            cin >> number;
-            cout << NumberToString(number) << endl;
+            string str = "4";
+            cout << NumberToString(str) << endl;
             system("pause");
         }break;
         case '4':
