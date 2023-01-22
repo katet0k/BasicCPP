@@ -1,42 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <conio.h>
-#include <Windows.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 int main()
 {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-
-    setlocale(LC_ALL, "ru");
-    char switch_on;
-    do
+    fstream file;
+    string text;
+    string text1;
+    int i = 1;
+    int a;
+    file.open("main.cpp", ios::in);
+    if (file.is_open())
     {
-        system("cls");
-        cout << "    #=====================MENU====================#" << endl;
-        cout << "     |                                           | " << endl;
-        cout << "     |                                           | " << endl;
-        cout << "    #=============================================#" << endl;
-        cout << "     |   0 - Exit                                |" << endl;
-        cout << "    #=============================================#" << endl;
-
-        cout << "\n --> ";
-        switch_on = _getch();
-        system("cls");
-        cout << endl;
-
-        switch (switch_on)
+        while (getline(file, text))
         {
-        case '0': {
-            break;
-        }break;
-
-
-        default:
-            break;
+            cout << i << "\t| " << text << endl;
+            i++;
         }
-    
-    } while (switch_on != '0');
+    }
+    cout << "--> ";
+    cin >> a;
+    cin.ignore();
+    cout << "--> ";
+    getline(cin, text1);
 
-	return 0;
+    if (file.is_open())
+    {
+        while (getline(file, text))
+        {
+            i++;
+            if (a == i) {
+                cout << i << "\t| " << text1 << endl;
+            }
+            else {
+                cout << i << "\t| " << text << endl;
+                i++;
+            }
+        }
+    }
+
+    file.open("main.cpp", ios::in);
+    if (file.is_open())
+    {
+        while (getline(file, text))
+        {
+            cout << i << "\t| " << text << endl;
+            i++;
+        }
+    }
+    return 0;
 }
