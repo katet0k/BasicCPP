@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include <algorithm>
 #include <vector>
+#include <string>
 using namespace std;
 
 uint64_t global_id = 0;
@@ -64,7 +65,6 @@ int main()
 
             for (size_t i = 0; i < size; i++)
             {
-
                 cin >> surname[i];
                 cout << endl;
             }
@@ -83,6 +83,14 @@ int main()
         }break;
         case '2':
         {
+            int a, b;
+            cin >> a;
+            cin >> b;
+            int** A = new int [a][b];
+            for (int i = 0; i < a; i++)
+            {
+
+            }
 
         }break;
         default:
