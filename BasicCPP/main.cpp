@@ -6,12 +6,7 @@ int main()
 {
     char path[] = "file.txt";
     char text_p[255];
-    FILE* file; //w r a wb rb     
-    //fgets - отримує строку   
-    //fputs - запис строки   
-    //fgetc - отримує 1 символ  
-    //fputc - запис 1 символ   
-    //fscanf - fprintf  
+    FILE* file;
     string text, _mode;
     do {
         system("cls");
