@@ -1,67 +1,68 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <conio.h>
-#include <Windows.h>
+#include <string>
 using namespace std;
-
 int main()
 {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-
-    setlocale(LC_ALL, "ru");
-    char switch_on;
-    do
-    {
-        
-
+    char path[] = "file.txt";
+    char text_p[255];
+    FILE* file; //w r a wb rb     
+    //fgets - отримує строку   
+    //fputs - запис строки   
+    //fgetc - отримує 1 символ  
+    //fputc - запис 1 символ   
+    //fscanf - fprintf  
+    string text, _mode;
+    do {
         system("cls");
-        cout << "    #=====================MENU====================#" << endl;
-        cout << "     |                                           | " << endl;
-        cout << "     |                                           | " << endl;
-        cout << "    #=============================================#" << endl;
-        cout << "     |   0 - Exit                                |" << endl;
-        cout << "    #=============================================#" << endl;
-
-        cout << "\n --> ";
-        switch_on = _getch();
-        system("cls");
-        cout << endl;
-
-        switch (switch_on)
-        {
-        case '0': {
-            break;
-        }break;
-
-        case '1':
-        {
-            FILE* file1;
-            FILE* file2;
-            char str1[256];
-            char str2[256];
-            char path[] = "file1.txt";
-            char path[] = "file2.txt";
-
-            string text, _mode;
-            if ((file1 = fopen(path, _mode.c_str())) == NULL)
+        cout << "File mode: " << endl;
+        cout << "w - write " << endl;
+        cout << "r - read " << endl;
+        cout << "a - append " << endl;
+        do {
+            cout << "Input (w,r,a): ";
+            cin >> _mode;
+            if (_mode[0] == 'w' || _mode[0] == 'r' || _mode[0] == 'a')
             {
-                perror("Error occured while opening.txt");
+                break;
             }
-            while (fgetc(file1)) {
-                
-
-
+            else {
+                cout << "Error! Incorrect file mode!" << endl;
             }
-
-
-        }break;
-
-        default:
-            break;
+        } while (true);
+        cin.ignore();
+        if ((file = fopen(path, _mode.c_str())) == NULL)
+        {
+            perror("Error occured while opening.txt");
         }
-    
-    } while (switch_on != '0');
-
-	return 0;
+        else {
+            switch (_mode[0])
+            {
+            case 'w':
+            {
+                cout << "Input: ";
+                gets_s(text_p);
+                fprintf(file, "%s", text_p);
+                fprintf(file, "%c", '\n');
+            }break;
+            case 'a':
+            {
+                cout << "Input: ";
+                gets_s(text_p);
+                fprintf(file, "%s", text_p);
+                fprintf(file, "%c", '\n');
+            }break;
+            case 'r':
+            {
+                while (fgets(text_p, 255, file))
+                {
+                    cout << text_p;
+                }
+            }break;
+            }
+            std::fclose(file);
+        }
+        system("pause");
+    } while (true);
+    return 0;
 }
