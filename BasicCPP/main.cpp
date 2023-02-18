@@ -80,18 +80,43 @@ struct Surname {
     }
 };
 
+struct Car {
+
+    void k() {
+        string length = " 4500 ";
+        string landing_height = " 1642 ";
+        string power_engine = " 100 (136) ";
+        string wheel_diameter = " 2692 ";
+        string color = " чорний ";
+        string type_of_gearbox = " автомат ";
+
+        cout << "довжина ______________________ " << length << endl;
+        cout << "кліренс (висота посадки) _____ " << landing_height << endl;
+        cout << "об’єм двигуна ________________ " << power_engine << endl;
+        cout << "потужність двигуна ___________ " << wheel_diameter << endl;
+        cout << "діаметр коліс ________________ " << wheel_diameter << endl;
+        cout << "колір ________________________ " << color << endl;
+        cout << "тип коробки передач __________ " << type_of_gearbox << endl;
+    }
+
+};
 int main()
 {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
-    setlocale(LC_ALL, "ru");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     char switch_on;
     do
     {
         system("cls");
         cout << "    #=====================MENU====================#" << endl;
         cout << "     |                                           | " << endl;
+        cout << "     |     1 - Описує комплексне число.          | " << endl;
+        cout << "     |                                           | " << endl;
+        cout << "     |     2 - Автомобіль                        | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #=============================================#" << endl;
         cout << "     |   0 - Exit                                |" << endl;
@@ -107,7 +132,7 @@ int main()
         case '0': {
             break;
         }break;
-        case '1':
+        case '9':
         {
             uint32_t size = 5;
             string* surname = new string[size];
@@ -130,119 +155,88 @@ int main()
             system("pause");
 
         }break;
-        case '2':
+        case '1':
         {
-            char switch_on;
+
+            Complex c1;
+            Complex c2;
+            c1.x = 5;
+            c1.y = 4;
+            c1.Print();
+            c2.x = 6;
+            c2.y = 5;
+            c2.Print();
+            char switch_on1;
+
             do
             {
-                system("cls");
-                cout << "    #=====================MENU====================#" << endl;
-                cout << "     |                                           | " << endl;
-                cout << "     |                                           | " << endl;
-                cout << "    #=============================================#" << endl;
-                cout << "     |   0 - Exit                                |" << endl;
-                cout << "    #=============================================#" << endl;
 
-                cout << "\n --> ";
-                switch_on = _getch();
-                system("cls");
+                cout << endl;
+                cout << "#===============#" << endl;
+                cout << " |   1 --> +   | " << endl;
+                cout << " |   2 --> -   | " << endl;
+                cout << " |   3 --> *   | " << endl;
+                cout << " |   4 --> /   | " << endl;
+                cout << " | 0 --> exit  | " << endl;
+                cout << "#===============#" << endl;
+
+                cout << " ---> ";
+                switch_on1 = _getch();
                 cout << endl;
 
-
-
-                switch (switch_on)
+                switch (switch_on1)
                 {
                 case '0': {
                     break;
                 }break;
-                /*case '1':
+                case '1':
                 {
-                    uint32_t size = 5;
-                    string* surname = new string[size];
+                    Complex c3 = Sum(c1, c2);
+                    c3.Print();
 
-                    for (size_t i = 0; i < size; i++)
-                    {
-
-                        cin >> surname[i];
-                        cout << endl;
-                    }
                     system("pause");
                     system("cls");
 
-                    sort(surname, surname + size);
-                    for (size_t i = 0; i < size; i++)
-                    {
-                        cout << i << " - ";
-                        cout << surname[i] << endl;
-                        cout << endl;
-                    }
+                }break;
+                case '2': {
+                    Complex c4 = B(c1, c2);
+                    c4.Print1();
+
                     system("pause");
-
-                }break;*/
-                case '1':
-                {
-                    Complex c1;
-                    Complex c2;
-                    c1.x = 5;
-                    c1.y = 4;
-                    c1.Print();
-                    c2.x = 6;
-                    c2.y = 5;
-                    c2.Print();
-                    char switch_on1;
-
-                    cout << endl;
-                    cout << "#===============#" << endl;
-                    cout << " |   1 --> +   | " << endl;
-                    cout << " |   2 --> -   | " << endl;
-                    cout << " |   3 --> *   | " << endl;
-                    cout << " |   4 --> /   | " << endl;
-                    cout << " | 0 --> exit  | " << endl;
-                    cout << "#===============#" << endl;
-                    do
-                    {
-                        cout << " ---> ";
-                        switch_on1 = _getch();
-                        cout << endl;
-
-                        switch (switch_on1)
-                        {
-                        case '0': {
-                            break;
-                        }break;
-                        case '1':
-                        {
-                            Complex c3 = Sum(c1, c2);
-                            c3.Print();
-
-                        }break;
-                        case '2': {
-                            Complex c4 = B(c1, c2);
-                            c4.Print1();
-                        }break;
-                        case '3': {
-                            Complex c5 = M(c1, c2);
-                            c5.Print2();
-                        }break;
-                        case '4': {
-                            Complex c6 = D(c1, c2);
-                            c6.Print3();
-                        }break;
-                        default:
-                            break;
-                        }
-
-                    } while (switch_on1 != '0');
+                    system("cls"); 
 
                 }break;
-                case '2':
-                {
+                case '3': {
+                    Complex c5 = M(c1, c2);
+                    c5.Print2();
+
+                    system("pause");
+                    system("cls");
 
                 }break;
+                case '4': {
+                    Complex c6 = D(c1, c2);
+                    c6.Print3();
 
+                    system("pause");
+                    system("cls");
+
+                }break;
+                default:
+                    break;
                 }
 
-            } while (switch_on != '0');
+            } while (switch_on1 != '0');
+
+
+        }break;
+
+        case '2':
+        {
+            Car car = car;
+
+            car.k();
+            system("pause");
         }break;
         }
     } while (switch_on != '0');
