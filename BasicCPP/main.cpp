@@ -87,16 +87,16 @@ struct Car {
         string landing_height = " 1642 ";
         string power_engine = " 100 (136) ";
         string wheel_diameter = " 2692 ";
-        string color = " чорний ";
-        string type_of_gearbox = " автомат ";
+        string color = " С‡РѕСЂРЅРёР№ ";
+        string type_of_gearbox = " Р°РІС‚РѕРјР°С‚ ";
 
-        cout << "довжина ______________________ " << length << endl;
-        cout << "кліренс (висота посадки) _____ " << landing_height << endl;
-        cout << "об’єм двигуна ________________ " << power_engine << endl;
-        cout << "потужність двигуна ___________ " << wheel_diameter << endl;
-        cout << "діаметр коліс ________________ " << wheel_diameter << endl;
-        cout << "колір ________________________ " << color << endl;
-        cout << "тип коробки передач __________ " << type_of_gearbox << endl;
+        cout << "РґРѕРІР¶РёРЅР° ______________________ " << length << endl;
+        cout << "РєР»С–СЂРµРЅСЃ (РІРёСЃРѕС‚Р° РїРѕСЃР°РґРєРё) _____ " << landing_height << endl;
+        cout << "РѕР±вЂ™С”Рј РґРІРёРіСѓРЅР° ________________ " << power_engine << endl;
+        cout << "РїРѕС‚СѓР¶РЅС–СЃС‚СЊ РґРІРёРіСѓРЅР° ___________ " << wheel_diameter << endl;
+        cout << "РґС–Р°РјРµС‚СЂ РєРѕР»С–СЃ ________________ " << wheel_diameter << endl;
+        cout << "РєРѕР»С–СЂ ________________________ " << color << endl;
+        cout << "С‚РёРї РєРѕСЂРѕР±РєРё РїРµСЂРµРґР°С‡ __________ " << type_of_gearbox << endl;
     }
 
 };
@@ -114,9 +114,9 @@ int main()
         system("cls");
         cout << "    #=====================MENU====================#" << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |     1 - Описує комплексне число.          | " << endl;
+        cout << "     |     1 - РћРїРёСЃСѓС” РєРѕРјРїР»РµРєСЃРЅРµ С‡РёСЃР»Рѕ.          | " << endl;
         cout << "     |                                           | " << endl;
-        cout << "     |     2 - Автомобіль                        | " << endl;
+        cout << "     |     2 - РђРІС‚РѕРјРѕР±С–Р»СЊ                        | " << endl;
         cout << "     |                                           | " << endl;
         cout << "    #=============================================#" << endl;
         cout << "     |   0 - Exit                                |" << endl;
