@@ -47,26 +47,27 @@ int main()
     {
         cout << i + 1 << "\t| " << text_from_file[i] << endl;
     }
-    cout << endl;
-    cout << "#=======================#" << endl;
-    cout << " |   1 - Додавання     |" << endl;
-    cout << " |                     |" << endl;
-    cout << " |   2 - Редагування   |" << endl;
-    cout << " |                     |" << endl;
-    cout << " |   3 - Видалення     |" << endl;
-    cout << " |                     |" << endl;
-    cout << " |   0 - Вихід         |" << endl;
-    cout << "#=======================#" << endl;
-
     char switch_on;
+    do
+    {
+        cout << endl;
+        cout << "#=======================#" << endl;
+        cout << " |   1 - Додавання     |" << endl;
+        cout << " |                     |" << endl;
+        cout << " |   2 - Редагування   |" << endl;
+        cout << " |                     |" << endl;
+        cout << " |   3 - Видалення     |" << endl;
+        cout << " |                     |" << endl;
+        cout << " |   0 - Вихід         |" << endl;
+        cout << "#=======================#" << endl;
+
     cout << "\n --> ";
     cin >> switch_on;
     switch (switch_on)
     {
     case '1':
     {
-        cout << "Номер строки строки --> ";
-        cin >> a;
+        a = 139;
         cin.ignore();
         cout << "Текст --> ";
         getline(cin, text1);
@@ -82,9 +83,10 @@ int main()
         {
             cout << i + 1 << "\t| " << text_from_file[i] << endl;
         }
-        
+        system("pause");
+        system("cls");
     }break;
-    case 2: {
+    case '2': {
         cout << "Номер строки строки --> ";
         cin >> a;
         cin.ignore();
@@ -92,7 +94,7 @@ int main()
         getline(cin, text1);
         if (a < 0 || a > size_text)
         {
-
+            cout << "Eror" << endl;
         }
         else
         {
@@ -102,10 +104,37 @@ int main()
         {
             cout << i + 1 << "\t| " << text_from_file[i] << endl;
         }
+
+        system("pause");
+        system("cls");
+    }break;
+    case '3':
+    {
+        cout << "Номер строки строки --> ";
+        cin >> a;
+        cin.ignore();
+        text1 = "     ";
+        if (a < 0 || a > size_text)
+        {
+            cout << "Eror" << endl;
+        }
+        else
+        {
+            text_from_file[a - 1] = text1;
+        }
+        for (size_t i = 0; i < size_text; i++)
+        {
+            cout << i + 1 << "\t| " << text_from_file[i] << endl;
+            
+        }
+
+        system("pause");
+        system("cls");
     }break;
     default:
         break;
     }
 
+    } while (switch_on != '0');
     return 0;
 }
