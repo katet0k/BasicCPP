@@ -52,13 +52,13 @@ int main()
     {
         cout << endl;
         cout << "#=======================#" << endl;
-        cout << " |   1 - Äîäàâàííÿ     |" << endl;
+        cout << " |   1 - Ð”Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ     |" << endl;
         cout << " |                     |" << endl;
-        cout << " |   2 - Ðåäàãóâàííÿ   |" << endl;
+        cout << " |   2 - Ð ÐµÐ´Ð°Ð³ÑƒÐ²Ð°Ð½Ð½Ñ   |" << endl;
         cout << " |                     |" << endl;
-        cout << " |   3 - Âèäàëåííÿ     |" << endl;
+        cout << " |   3 - Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ     |" << endl;
         cout << " |                     |" << endl;
-        cout << " |   0 - Âèõ³ä         |" << endl;
+        cout << " |   0 - Ð’Ð¸Ñ…Ñ–Ð´         |" << endl;
         cout << "#=======================#" << endl;
 
     cout << "\n --> ";
@@ -69,7 +69,7 @@ int main()
     {
         a = 139;
         cin.ignore();
-        cout << "Òåêñò --> ";
+        cout << "Ð¢ÐµÐºÑÑ‚ --> ";
         getline(cin, text1);
         if (a < 0 || a > size_text)
         {
@@ -87,10 +87,10 @@ int main()
         system("cls");
     }break;
     case '2': {
-        cout << "Íîìåð ñòðîêè ñòðîêè --> ";
+        cout << "ÐÐ¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ ÑÑ‚Ñ€Ð¾ÐºÐ¸ --> ";
         cin >> a;
         cin.ignore();
-        cout << "Òåêñò --> ";
+        cout << "Ð¢ÐµÐºÑÑ‚ --> ";
         getline(cin, text1);
         if (a < 0 || a > size_text)
         {
@@ -110,7 +110,7 @@ int main()
     }break;
     case '3':
     {
-        cout << "Íîìåð ñòðîêè ñòðîêè --> ";
+        cout << "ÐÐ¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ ÑÑ‚Ñ€Ð¾ÐºÐ¸ --> ";
         cin >> a;
         cin.ignore();
         text1 = "     ";
