@@ -48,39 +48,39 @@ void Pers(int pers, string pee) {
     case 1:
     {
         pee = Harry_Potter;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 6));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Harry_Potter << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
     case 2:
     {
         pee = Ronald_Weasley;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 6));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Ronald_Weasley << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
     case 3:
     {
         pee = Hermione_Granger;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 6));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Hermione_Granger << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
     case 4:
     {
         pee = Draco_Malfoy;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 10));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Draco_Malfoy << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
     case 5:
     {
         pee = Albus_Dumbledore;
-        cout << "Ви вибрали персонажа ~ ";
+        cout << " Ви вибрали персонажа ~ ";
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Albus_Dumbledore << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
@@ -88,8 +88,8 @@ void Pers(int pers, string pee) {
     case 6:
     {
         pee = Severus_Snape;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 10));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Severus_Snape << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
@@ -97,16 +97,16 @@ void Pers(int pers, string pee) {
     case 7:
     {
         pee = Luna_Lovegood;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 11));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Luna_Lovegood << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
     case 8:
     {
         pee = Voldemort;
-        cout << "Ви вибрали персонажа ~ ";
-        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 11));
+        cout << " Ви вибрали персонажа ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Voldemort << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     }break;
@@ -114,271 +114,371 @@ void Pers(int pers, string pee) {
     }
 }
 void HP(int HP1) {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     if (HP1 == 100) {
-        cout << " -------------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " -------------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 95) {
-        cout << "  ------------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 90) {
-        cout << "   ------------------ " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " --";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------------------ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 85) {
-        cout << "    ----------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ---";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "----------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 80) {
-        cout << "     ---------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ----";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "---------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 75) {
-        cout << "      --------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -----";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "--------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 70) {
-        cout << "       -------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "-------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 65) {
-        cout << "        ------------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 60) {
-        cout << "         ------------ " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " --------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------------ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 55) {
-        cout << "          ----------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ---------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "----------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 50) {
-        cout << "           ---------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ----------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "---------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 45) {
-        cout << "            --------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -----------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "--------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 40) {
-        cout << "             -------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "-------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 35) {
-        cout << "              ------- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 30) {
-        cout << "               ------ " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " --------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "------ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 25) {
-        cout << "                ----- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ---------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "----- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 20) {
-        cout << "                 ---- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ----------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "---- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 15) {
-        cout << "                  --- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -----------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "--- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 10) {
-        cout << "                   -- " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " ------------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "-- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 5) {
-        cout << "                    - " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " -------------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << "- ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
     if (HP1 == 0) {
-        cout << "                      " << HP1 << "%";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << " --------------------";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << HP1 << "%";
     }
 
 }
 void Kart(int R) {
     string Petrificus_Totalus = {
-        " 0-------------------------------------0\n"
-        " |   Петрифікус Тоталус                |\n"
-        " |   Закляття-тілов`яз – повністю      |\n"
-        " |   знерухомлює тіло зачарованого.    |\n"
-        " |                                     |\n"
-        " |           Зачарований пропускає хід,|\n"
-        " |           якщо не відіб'є закляття. |\n"
-        " 0-------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Петрифікус Тоталус                     *\n"
+        " *  закляття-тілов`яз – повністю           *\n"
+        " *  знерухомлює тіло зачарованого.         *\n"
+        " *                                         *\n"
+        " *             Зачарований пропускає хід,  *\n"
+        " *             якщо не відіб'є закляття.   *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Incendio = {
-        " 0-------------------------------------0\n"
-        " |   Інсендіо                          |\n"
-        " |   закляття, що викликає вогонь,     |\n"
-        " |   який вилітає з палички.           |\n"
-        " |                           - 5 НР    |\n"
-        " 0-------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Інсендіо                               *\n"
+        " *  закляття, що викликає вогонь,          *\n"
+        " *  який вилітає з палички.                *\n"
+        " *                                         *\n"
+        " *                                - 10 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Expeliarmus = {
-        " 0----------------------------------------0\n"
-        " |   Експеліармус                         |\n"
-        " |   призначається для роззброєння        |\n"
-        " |   суперника. Виглядає воно як спалах   |\n"
-        " |   червоного світла.                    |\n"
-        " |   Експеліармус вибиває паличку з рук   |\n"
-        " |   суперника, а інколи й відкидає його  |\n"
-        " |   самого.                              |\n"
-        " |                      Захисне закляття. |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Експеліармус                           *\n"
+        " *  призначається для роззброєння          *\n"
+        " *  суперника. Виглядає воно як спалах     *\n"
+        " *  червоного світла.                      *\n"
+        " *  Експеліармус вибиває паличку з рук     *\n"
+        " *  суперника, а інколи й відкидає його    *\n"
+        " *  самого.                                *\n"
+        " *                                         *\n"
+        " *             Зачарований пропускає хід,  *\n"
+        " *              якщо не відіб'є закляття.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Sectumsempra = {
-        " 0----------------------------------------0\n"
-        " |   Сектумсепра                          |\n"
-        " |   Сектусемпра – жорстоко ранить жертву,|\n"
-        " |   наче мечем. Це закляття винайдене    |\n"
-        " |   Северусом Снейпом                    |\n"
-        " |                     Якщо ваш персонаж  |\n"
-        " |                Северус Снейп:  - 30 HP |\n"
-        " |                         Інші:  - 20 НР |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Сектумсепра                            *\n"
+        " *  жорстоко ранить жертву, наче мечем.    *\n"
+        " *  Це закляття винайдене Снейпом.         *\n"
+        " *                                         *\n"
+        " *                Якщо ваш персонаж        *\n"
+        " *                Северус Снейп:  - 40 HP  *\n"
+        " *                         Інші:  - 20 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
-
     string Rictusempra = {
-
-        " 0----------------------------------------0\n"
-        " |    Ріктумсепра                         |\n"
-        " |    Ріктумсепра – це закляття, що       |\n"
-        " |    насилає нестерпний лоскіт на        |\n"
-        " |    зачаклованого.                      |\n"
-        "                                   - 1 НР |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Ріктумсепра                            *\n"
+        " *  це закляття, що насилає нестерпний     *\n"
+        " *  лоскіт на зачаклованого.               *\n"
+        " *                                         *\n"
+        " *                                 - 5 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Finite_Incantatem = {
-        " 0----------------------------------------0\n"
-        " |     Фініте Інкантатем                  |\n"
-        " |     зупиняє дію багатьох заклять       |\n"
-        " |                     Захисне закляття.  |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Фініте Інкантатем                      *\n"
+        " *  зупиняє дію багатьох заклять           *\n"
+        " *                                         *\n"
+        " *                      Захисне закляття.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Serpensortia = {
-
-        " 0----------------------------------------0\n"
-        " |     Серпенсортія                       |\n"
-        " |     це закляття випускає змію з        |\n" 
-        " |     кінчика чарівної палички.          |\n"
-        " |     При цьому слід враховувати,        |\n"
-        " |     щочаклун, який не знає парселмови  |\n"
-        " |     не зможе її цілком контролювати.   |\n"
-        " |                               - 10 НР  |\n"
-        " |                               - 20 НР  |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Серпенсортія                           *\n"
+        " *  це закляття випускає змію з            *\n" 
+        " *  кінчика чарівної палички.              *\n"
+        " *  При цьому слід враховувати,            *\n"
+        " *  щочаклун, який не знає парселмови      *\n"
+        " *  не зможе її цілком контролювати.       *\n"
+        " *                                         *\n"
+        " *               Непередбачуване закляття  *\n"
+        " *                             10 ~ 20 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Oblivion = {
-
-        " 0----------------------------------------0\n"
-        " |     Забуттятус                         |\n"
-        " |     заклинання, що “стирає” пам`ять    |\n"
-        " |     зачаклованого.                     |\n"
-        " |               Противник пропускає хід, |\n"
-        " |               забуваючи що не ходив.   |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Забуттятус                             *\n"
+        " *  заклинання, що “стирає” пам`ять        *\n"
+        " *  зачаклованого.                         *\n"
+        " *                                         *\n"
+        " *             Зачарований пропускає хід.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Fire_frost = {
-
-        " 0----------------------------------------0\n"
-        " |     Вогнеморозко                       |\n"
-        " |     це заклинання, що захищає від      |\n"
-        " |     вогню. Після накладення цього      |\n"
-        " |     заклинання вогонь не завдає жодної |\n"
-        " |     шкоди, а лише лоскоче.             |\n"
-        " |                      Захисне закляття, |\n"
-        " |                діє тільки при  захисті |\n"
-        " |                від вогняних заклять.   |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Вогнеморозко                           *\n"
+        " *  це заклинання, що захищає від          *\n"
+        " *  вогню. Після накладення цього          *\n"
+        " *  заклинання вогонь не завдає жодної     *\n"
+        " *  шкоди, а лише лоскоче.                 *\n"
+        " *                                         *\n"
+        " *               Захисне закляття, діє     *\n"
+        " *               тільки при  захисті від   *\n"
+        " *                      вогняних заклять.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Expecto_patronum = {
-        " 0----------------------------------------0\n"
-        " |    Експекто патронум                   |\n"
-        " |    закляття, що викликає захисну форму |\n"
-        " |    – патронуса, який захищає виконавця,|\n"
-        " |    поки той сконцентрований.           |\n"
-        " |                      Захисне закляття. |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Експекто патронум                      *\n"
+        " *  закляття, що викликає захисну форму    *\n"
+        " *  – патронуса, який захищає виконавця,   *\n"
+        " *  поки той сконцентрований.              *\n"
+        " *                                         *\n"
+        " *                      Захисне закляття.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Confundus = {
-        " 0----------------------------------------0\n"
-        " |    Конфундус                           |\n"
-        " |    (спантеличуючі чари) – закляття     |\n"
-        " |    затуманює свідомість зачаклованого, |\n"
-        " |    спантеличує його                    |\n"
-        "                                  - 5 НР  |\n"
-        " 0----------------------------------------0\n"
-    };
-    string Action = {
-        " 0----------------------------------------0\n"
-        " |    Акціо                               |\n"
-        " |    замовляння-викликання – викликає    |\n"
-        " |    вказані предмети до виконавця       |\n"
-        " |    навіть тоді, коли вони знаходяться  |\n"
-        " |    на великій відстані, але не захищені|\n"
-        " |    контр-закляттями                    |\n"
-        " 0----------------------------------------0\n"
-    };
-    string Morsmordre = {
-        " 0----------------------------------------0\n"
-        " |    Морсмордре                          |\n"
-        " |    (Чорна Мітка) – викликає знак       |\n"
-        " |    Волдеморта                          |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Конфундус                              *\n"
+        " *  (спантеличуючі чари) – закляття        *\n"
+        " *  затуманює свідомість зачаклованого,    *\n"
+        " *  спантеличує його.                      *\n"
+        " *                                         *\n"
+        " *                                 - 5 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Avis = {
-        " 0----------------------------------------0\n"
-        " |    Авіс                                |\n"
-        " |    це заклинання, яке створює зграйку  |\n"
-        " |    пташок, яка вилітає з палички       |\n"
-        " |    виконавця                           |\n"
-        " |                                - 5 НР  |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Авіс                                   *\n"
+        " *  це заклинання, яке створює зграйку     *\n"
+        " *  пташок, яка вилітає з палички          *\n"
+        " *  виконавця                              *\n"
+        " *                                         *\n"
+        " *                                 - 5 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Avada_Kedavra = {
-        " 0----------------------------------------0\n"
-        " |   Авада Кедавра                        |\n"
-        " |   смертельне прокляття – вбиває жертву.|\n"
-        " |   Виглядає, як спалах зеленого світла. |\n"
-        " |   До цього закляття не існує           |\n"
-        " |   контр-заклять.                       |\n"
-        " |   Це закляття може використовувати     |\n"
-        " |   лише персонаж Волдеморт              |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Авада Кедавра                          *\n"
+        " *  смертельне прокляття – вбиває жертву.  *\n"
+        " *  Виглядає, як спалах зеленого світла.   *\n"
+        " *  До цього закляття не існує             *\n"
+        " *  контр-заклять.                         *\n"
+        " *                                         *\n"
+        " *                   Це закляття може      *\n"
+        " *                   використовувати лише  *\n"
+        " *                   персонаж Волдеморт.   *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Crucio = {
-        " 0----------------------------------------0\n"
-        " |   Круціо                               |\n"
-        " |   закляття, що спричиняє нестерпний    |\n"
-        " |   біль зачаклованому.                  |\n"
-        " |                                - 40 НР |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Круціо                                 *\n"
+        " *  закляття, що спричиняє нестерпний      *\n"
+        " *  біль зачаклованому.                    *\n"
+        " *                                         *\n"
+        " *                                - 40 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Imperio = {
-        " 0----------------------------------------0\n"
-        " |   Імперіо                              |\n"
-        " |   (Імперіус) – закляття, яке дозволяє  |\n"
-        " |   керувати вчинками і словами інших    |\n"
-        " |               Дозволяє використовувати |\n"
-        " |              закляття противника проти |\n"
-        " |              нього самого.             |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Імперіо                                *\n"
+        " *  (Імперіус) – закляття, яке дозволяє    *\n"
+        " *  керувати вчинками і словами інших      *\n"
+        " *                                         *\n"
+        " *               Дозволяє використовувати  *\n"
+        " *              закляття противника проти  *\n"
+        " *              нього самого.              *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Reducto = {
-        " 0----------------------------------------0\n"
-        " |    Редукто                             |\n"
-        " |    вибухове закляття                   |\n"
-        " |                                -25 НР  |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Редукто                                *\n"
+        " *  вибухове закляття                      *\n"
+        " *                                         *\n"
+        " *                                 -20 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Protego = {
-        " 0----------------------------------------0\n"
-        " |    Протеґо                             |\n"
-        " |    закляття-щит – захищає чаклуна від  |\n"
-        " |    більшості простих заклинань         |\n"
-        " |                       Захисне закляття.|\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Протеґо                                *\n"
+        " *  закляття-щит – захищає чаклуна від     *\n"
+        " *  більшості простих заклинань            *\n"
+        " *                                         *\n"
+        " *                      Захисне закляття.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string Agvamenti = {
-        " 0----------------------------------------0\n"
-        " |    Аґваменті                           |\n"
-        " |    закляття, що випускає струмінь води |\n"
-        " |    з чарівної палички                  |\n"
-        " |                                -20 НР  |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Аґваменті                              *\n"
+        " *  закляття, що випускає струмінь води    *\n"
+        " *  з чарівної палички                     *\n"
+        " *                                         *\n"
+        " *                                 -20 НР  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     string the_spell = {
-        " 0----------------------------------------0\n"
-        " |    Заклятус                            |\n"
-        " |    приголомшуюче заклинання, яке на    |\n"
-        " |    деякий час позбавляє свідомості     |\n"
-        " |    зачаклованого.                      |\n"
-        " |               Противник пропускає хід. |\n"
-        " 0----------------------------------------0\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
+        " *  Заклятус                               *\n"
+        " *  приголомшуюче заклинання, яке на       *\n"
+        " *  деякий час позбавляє свідомості        *\n"
+        " *  зачаклованого.                         *\n"
+        " *                                         *\n"
+        " *             Зачарований пропускає хід.  *\n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *\n"
     };
     if (R == 1) {
         cout << "" << endl;
@@ -426,41 +526,33 @@ void Kart(int R) {
     }
     if (R == 12) {
         cout << "" << endl;
-        cout << Action << endl;
+        cout << Avis << endl;
     }
     if (R == 13) {
         cout << "" << endl;
-        cout << Morsmordre << endl;
+        cout << Avada_Kedavra << endl;
     }
     if (R == 14) {
         cout << "" << endl;
-        cout << Avis << endl;
+        cout << Crucio << endl;
     }
     if (R == 15) {
         cout << "" << endl;
-        cout << Avada_Kedavra << endl;
+        cout << Imperio << endl;
     }
     if (R == 16) {
         cout << "" << endl;
-        cout << Crucio << endl;
+        cout << Reducto << endl;
     }
     if (R == 17) {
         cout << "" << endl;
-        cout << Imperio << endl;
+        cout << Protego << endl;
     }
     if (R == 18) {
         cout << "" << endl;
-        cout << Reducto << endl;
-    }
-    if (R == 19) {
-        cout << "" << endl;
-        cout << Protego << endl;
-    }
-    if (R == 20) {
-        cout << "" << endl;
         cout << Agvamenti << endl;
     }
-    if (R == 21) {
+    if (R == 19) {
         cout << "" << endl;
         cout << the_spell << endl;
     }
@@ -516,16 +608,6 @@ void Kart1(int R) {
 
         "  Конфундус           "
        
-    };
-    string Action = {
-
-        "  Акціо               "
-       
-    };
-    string Morsmordre = {
-
-        "  Морсмордре          "
-        
     };
     string Avis = {
 
@@ -601,33 +683,27 @@ void Kart1(int R) {
         cout << Confundus;
     }
     if (R == 12) {
-        cout << Action;
-    }
-    if (R == 13) {
-        cout << Morsmordre;
-    }
-    if (R == 14) {
         cout << Avis;
     }
-    if (R == 15) {
+    if (R == 13) {
         cout << Avada_Kedavra;
     }
-    if (R == 16) {
+    if (R == 14) {
         cout << Crucio;
     }
-    if (R == 17) {
+    if (R == 15) {
         cout << Imperio;
     }
-    if (R == 18) {
+    if (R == 16) {
         cout << Reducto;
     }
-    if (R == 19) {
+    if (R == 17) {
         cout << Protego;
     }
-    if (R == 20) {
+    if (R == 18) {
         cout << Agvamenti;
     }
-    if (R == 21) {
+    if (R == 19) {
         cout << the_spell;
     }
 }
@@ -639,7 +715,10 @@ int main()
 
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    string Hogwarts = { "                 <-- Hogwarts.Student Wars --> " };
+    string Hogwarts = { 
+        "                                                                       \n"
+        "                                         <~~ Hogwarts.Student Wars ~~> \n" 
+    };
     cout << Hogwarts << endl << endl << endl;
     string Harry_Potter = "Гаррі Поттер";
     string Ronald_Weasley = "Рональд Візлі ";
@@ -651,16 +730,26 @@ int main()
     string Voldemort = "Волдеморт";
     
     string Characters = {
-        " `````````````````````````````` \n"
-        " `    1 - Гаррі Поттер        ` \n"
-        " `    2 - Рональд Візлі       ` \n"
-        " `    3 - Герміона Ґрейнджер  ` \n"
-        " `    4 - Драко Мелфой        ` \n"
-        " `    5 - Албус Дамблдор      ` \n"
-        " `    6 - Северус Снейп       ` \n"
-        " `    7 - Луна Лавґуд         ` \n"
-        " `    8 - Волдеморт           ` \n"
-        " `````````````````````````````` \n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * \n"
+        " *    1 ~ Гаррі Поттер         * \n"
+        " *    2 ~ Рональд Візлі        * \n"
+        " *    3 ~ Герміона Ґрейнджер   * \n"
+        " *    4 ~ Драко Мелфой         * \n"
+        " *    5 ~ Албус Дамблдор       * \n"
+        " *    6 ~ Северус Снейп        * \n"
+        " *    7 ~ Луна Лавґуд          * \n"
+        " *    8 ~ Волдеморт            * \n"
+        " * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * \n"
+    };
+    string Pepe = {
+        " Для вибору персонажа введіть відповідне число \n"
+    };
+    string Zak = {
+        " Для використання закляття введіть відповідне число \n"
+        " Для перегляду закляття введіть відповідне число два рази підряд \n"
+    };
+    string Propysk = {
+        "Uhfdtwm"
     };
     string Petrificus_Totalus = {
         "  Петрифікус Тоталус  "
@@ -694,12 +783,6 @@ int main()
     };
     string Confundus = {
         "  Конфундус           "
-    };
-    string Action = {
-        "  Акціо               "
-    };
-    string Morsmordre = {
-        "  Морсмордре          "
     };
     string Avis = {
         "  Авіс                "
@@ -735,7 +818,7 @@ int main()
     string pee1;
     string pee2;
    
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     cout << " Введіть ваше імя ~~ > ";
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cin >> p1;
@@ -745,14 +828,16 @@ int main()
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << Hogwarts << endl << endl << endl;
 
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     cout << " Введіть ваше імя ~~ > ";
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << p1;
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
-    cout << "                                                       Введіть ваше імя ~~ > ";
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << "                                                       Введіть ваше імя ~~ > ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cin >> p2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+
     srand(time(0));
     int r = rand() % 2 + 1;
 
@@ -781,7 +866,7 @@ int main()
     }
 
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
-    cout << endl;
+    cout << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl;
     cout << " ";
     system("pause");
     system("cls");
@@ -789,11 +874,11 @@ int main()
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << Hogwarts << endl << endl << endl;
 
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     cout << " Гравець ~~ > ";
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << play1;
-    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
     cout << "                                                       Гравець ~~ > ";
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << play2 << endl;
@@ -801,25 +886,25 @@ int main()
 
     cout << endl << endl;
     cout << Characters << endl;
-    cout << " Гравець " << play1 << " виберіть персонажа ~~ > ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    cout << Pepe << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << " Гравець ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " виберіть персонажа ~~ > ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cin >> pers1;
-    if (pers1 > 8) {
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    
+    if (pers1 < 1 || pers1 > 8) {
 
-        while (pers1 > 8) {
+        while (pers1 < 1 || pers1 > 8) {
+            cout << endl;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 4));
-            cout << "Помилка. ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
-            cout << "Такого персонажу немає, спробуйте ще раз ~~> ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
-            cin >> pers1;
-        }
-    }
-    if (pers1 < 1) {
-
-        while (pers1 < 1) {
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 4));
-            cout << "Помилка. ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+            cout << "  Помилка. ";
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
             cout << "Такого персонажу немає, спробуйте ще раз ~~> ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
             cin >> pers1;
@@ -864,53 +949,81 @@ int main()
     }break;
     default: break;
     }
-    cout << endl;
+    cout << endl << endl << endl << endl << endl << endl;
     cout << " ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
     system("pause");
     system("cls");
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << Hogwarts << endl << endl << endl;
-    cout << play1 << " ~~~ " << pee1;
-    cout << "                                                       Гравець ~~ > " << play2 << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1 ;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ " << pee1;
+    cout << "                                                       Гравець ~~ > ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2 << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
     cout << endl << endl;
     cout << Characters << endl;
-    cout << "Гравець " << play2 << " виберіть персонажа: " << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+    cout << Pepe << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << " Гравець ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " виберіть персонажа ~~ > ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cin >> pers2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
 
    
-    if (pers2 > 8) {
+   
+    if (pers2 < 1 || pers2 > 8) {
 
-        while (pers2 > 8) {
+        while (pers2 < 1 || pers2 > 8) {
+            cout << endl;
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 4));
-            cout << "Помилка. ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
-            cout << "Такого персонажу немає, спробуйте ще раз ~~> ";
+            cout << " Помилка. ";
             SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
-            cin >> pers2;
-        }
-    }
-    if (pers2 < 1) {
-
-        while (pers2 < 1) {
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 4));
-            cout << "Помилка. ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
             cout << "Такого персонажу немає, спробуйте ще раз ~~> ";
-            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
             cin >> pers2;
         }
     }
     if (pers1 == pers2) {
         while (pers1 == pers2) {
-            cout << "Цей персонаж вибран іншим гравцем, виберіть іншого персонажа ~~> ";
+            cout << endl;
+            cout << " Цей персонаж вибран іншим гравцем, виберіть іншого персонажа ~~> ";
             cin >> pers2;
+            if (pers2 < 1 || pers2 > 8) {
+
+                while (pers2 < 1 || pers2 > 8) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 4));
+                    cout << " Помилка. ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+                    cout << "Такого персонажу немає, спробуйте ще раз ~~> ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cin >> pers2;
+                }
+            }
         }
+       
     }
-    Pers(pers2, pee2);
     cout << endl;
+    Pers(pers2, pee2);
+    cout << endl << endl << endl << endl << endl << endl;
     cout << " ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
     system("pause");
     system("cls");
+
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     switch (pers2)
     {
     case 1:
@@ -949,28 +1062,58 @@ int main()
     default:
         break;
     }
-    cout << Hogwarts << endl << endl << endl;
-    cout << play1 << " ~~~ " << pee1;
-    cout << "                                                                   " << play2 << " ~~~ " << pee2 << endl;
-    
-    cout << "Гра рандомно видає гравцю " << play1 << " 3 карти " << endl << endl;
-    
 
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << Hogwarts << endl << endl << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ " << pee1;
+    cout << "                                                                 ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    cout << pee2 << endl << endl;
+
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " Гра рандомно видає гравцю ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " 3 карти " << endl << endl;
+    
     srand(time(0));
-    int R1 = rand() % 21 + 1;
-    int R2 = rand() % 21 + 1;
-    int R3 = rand() % 21 + 1;
+    int R1 = 6;
+    int R2 = 6;
+    int R3 = 6;
     Kart(R1);
     Kart(R2);
     Kart(R3);
 
     cout << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
     cout << " ";
     system("pause");
     system("cls");
+
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << Hogwarts << endl << endl << endl;
-    cout << play1 << " ~~~ " << pee1;
-    cout << "                                                                   " << play2 << " ~~~ " << pee2 << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ " << pee1;
+    cout << "                                                                 ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    cout << pee2 << endl << endl;
+
     cout << "" << endl;
     cout << " 1 "; 
     Kart1(R1);
@@ -982,13 +1125,16 @@ int main()
     Kart1(R3);
     cout << endl << endl;
 
-    cout << " Гра рандомно видає гравцю " << play2 << " 3 карти " << endl << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " Гра рандомно видає гравцю ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " 3 карти " << endl << endl;
 
-
-    srand(time(0));
-    int R01 = rand() % 21 + 1;
-    int R02 = rand() % 21 + 1;
-    int R03 = rand() % 21 + 1;
+    int R01 = 7;
+    int R02 = 5;
+    int R03 = 14;
     Kart(R01);
     Kart(R02);
     Kart(R03);
@@ -997,18 +1143,31 @@ int main()
     int HP2 = 100;
     int HPP = 0;
     int HPP2 = 0;
-    cout << endl;
+    cout << endl; 
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
     cout << " ";
     system("pause");
     system("cls");
 
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << Hogwarts << endl << endl << endl;
-    cout << play1 << " ~~~ " << pee1;
-    cout << "                                                                   " << play2 << " ~~~ " << pee2 << endl;
-    cout << endl;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play1;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ " << pee1;
+    cout << "                                                                 ~ ";
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+    cout << play2;
+    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+    cout << " ~ ";
+    cout << pee2 << endl << endl;
+
     HP(HP1);
     cout << "                                                            ";
     HP(HP2);
+    cout << endl;
     SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
     cout << "" << endl;
     cout << " 1 ";
@@ -1039,12 +1198,1007 @@ int main()
     int n03 = 0;
     for (size_t a = 0; a < 3; a++)
     {
-        cout << i << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << Zak << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
         int num;
         cin >> num;
         cout << endl;
+        while (num == 11 || num == 22 || num == 33) {
+            if (num == 11) {
+                Kart(R1);
+            }
+            if (num == 22) {
+                Kart(R2);
+            }
+            if (num == 33) {
+                Kart(R3);
+            }
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+            cout << endl << endl << endl << endl << endl << endl << endl << endl;
+            cout << " ";
+            system("pause");
+            system("cls");
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << Hogwarts << endl << endl << endl;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ ";
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << play1;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ " << pee1;
+            cout << "                                                                 ~ ";
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << play2;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ ";
+            cout << pee2 << endl << endl;
+
+            HP(HP1);
+            cout << "                                                            ";
+            HP(HP2);
+            cout << endl;
+            if (i == 1)
+            {
+                if (num == 11 || num == 22 || num == 33) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+
+                }
+                if (num == 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (num == 2) {
+                    cout << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (num == 3) {
+                    cout << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+            }
+            if (i == 2) {
+                if (n1 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n2 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n2 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n2 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n3 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n3 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n3 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+            }
+            if (i == 3) {
+                if (n1 >= 1 && n2 >= 1 && n01 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n01 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n02 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n01 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n01 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n02 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n01 >= 1 && n02 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n01 >= 1 && n03 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n02 >= 1 && n03 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+            }
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << endl; 
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+            cout << Zak << endl;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+            cin >> num;
+
+        }
+        if (num < 1 || num > 3 && num != 11 && num != 22 && num != 33) {
+            while (num < 1 || num > 3 && num != 11 && num != 22 && num != 33) {
+                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                cin >> num;
+            }
+        }
         if (i == 1) {
+            if (num == 1) {
+                if (R1 == 1) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R1 == 2) {
+                    HPP = 10;
+                }
+                if (R1 == 3) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R1 == 4) {
+                    if (pers1 == 6) {
+                        HPP = 40;
+                    }
+                    else {
+                        HPP = 20;
+                    }
+                }
+                if (R1 == 5) {
+                    HPP = 5;
+                }
+                if (R1 == 6) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R1 == 7) {
+                    HPP = rand() % 20 + 10;
+                }
+                if (R1 == 8) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+                if (R1 == 9) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R1 == 10) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R1 == 11) {
+                    HPP = 5;
+                }
+                if (R1 == 12) {
+                    HPP = 5;
+                }
+                if (R1 == 13) {
+                    if (pers1 == 8) {
+                        if (pers2 == 1) {
+                            HPP = 0;
+                        }
+                        else {
+                            HPP = 100;
+                        }
+                    }
+                    else {
+                        HPP = 0;
+                    }
+                }
+                if (R1 == 14) {
+                    HPP = 40;
+                }
+                if (R1 == 15) {
+                    cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                    cout << " Введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n02++;
+                    }
+                    if (num == 2) {
+                        n02++;
+                    }
+                    if (num == 3) {
+                        n03++;
+                    }
+                }
+                if (R1 == 16) {
+                    HPP = 20;
+                }
+                if (R1 == 17) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R1 == 18) {
+                    HPP = 20;
+                }
+                if (R1 == 19) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+            }
+            if (num == 2) {
+                if (R2 == 1) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R2 == 2) {
+                    HPP = 10;
+                }
+                if (R2 == 3) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R2 == 4) {
+                    if (pers1 == 6) {
+                        HPP = 40;
+                    }
+                    else {
+                        HPP = 20;
+                    }
+                }
+                if (R2 == 5) {
+                    HPP = 5;
+                }
+                if (R2 == 6) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R2 == 7) {
+                    HPP = rand() % 20 + 10;
+                }
+                if (R2 == 8) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+                if (R2 == 9) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R2 == 10) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R2 == 11) {
+                    HPP = 5;
+                }
+                if (R2 == 12) {
+                    HPP = 5;
+                }
+                if (R2 == 13) {
+                    if (pers1 == 8) {
+                        if (pers2 == 1) {
+                            HPP = 0;
+                        }
+                        else {
+                            HPP = 100;
+                        }
+                    }
+                    else {
+                        HPP = 0;
+                    }
+                }
+                if (R2 == 14) {
+                    HPP = 40;
+                }
+                if (R2 == 15) {
+                    cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                    cout << " Введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n02++;
+                    }
+                    if (num == 2) {
+                        n02++;
+                    }
+                    if (num == 3) {
+                        n03++;
+                    }
+                }
+                if (R2 == 16) {
+                    HPP = 20;
+                }
+                if (R2 == 17) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R2 == 18) {
+                    HPP = 20;
+                }
+                if (R2 == 19) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+            }
+            if (num == 3) {
+                if (R3 == 1) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R3 == 2) {
+                    HPP = 10;
+                }
+                if (R3 == 3) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+                }
+                if (R3 == 4) {
+                    if (pers1 == 6) {
+                        HPP = 40;
+                    }
+                    else {
+                        HPP = 20;
+                    }
+                }
+                if (R3 == 5) {
+                    HPP = 5;
+                }
+                if (R3 == 6) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R3 == 7) {
+                    HPP = rand() % 20 + 10;
+                }
+                if (R3 == 8) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+                if (R3 == 9) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R3 == 10) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R3 == 11) {
+                    HPP = 5;
+                }
+                if (R3 == 12) {
+                    HPP = 5;
+                }
+                if (R3 == 13) {
+                    if (pers1 == 8) {
+                        if (pers2 == 1) {
+                            HPP = 0;
+                        }
+                        else {
+                            HPP = 100;
+                        }
+                    }
+                    else {
+                        HPP = 0;
+                    }
+                }
+                if (R3 == 14) {
+                    HPP = 40;
+                }
+                if (R3 == 15) {
+                    cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                    cout << " Введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+                    if (num == 1) {
+                        n02++;
+                    }
+                    if (num == 2) {
+                        n02++;
+                    }
+                    if (num == 3) {
+                        n03++;
+                    }
+                }
+                if (R3 == 16) {
+                    HPP = 20;
+                }
+                if (R3 == 17) {
+                    cout << " Ви використали захисне закляття." << endl;
+                    cout << " Наступне закляття введенне гравцем " << play2 << " не завдасть вам урону. " << endl;
+                }
+                if (R3 == 18) {
+                    HPP = 20;
+                }
+                if (R3 == 19) {
+                    cout << " Гравець " << play2 << " пропускає хід. " << endl;
+                    cout << " Гравець " << play1 << " введіть закляття яке хочете використати ~~ > ";
+                    cin >> num;
+
+                    if (num == 1) {
+                        n1++;
+                    }
+                    if (num == 2) {
+                        n2++;
+                    }
+                    if (num == 3) {
+                        n3++;
+                    }
+
+                }
+            }
+
             if (num == 1) {
                 n1++;
             }
@@ -1056,25 +2210,55 @@ int main()
             }
         }
         if (i == 2) {
+
             if (num == 1) {
                 if (n1 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num;
+                    while (num == 1) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ > ";
+                        cin >> num;
+
+                        if (num < 1 || num > 3 ) {
+                            while (num < 1 || num > 3 && num != 11 && num != 22 && num != 33) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num;
+                            }
+                        }
+                    }
                 }
             }
             if (num == 2) {
                 if (n2 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num;
+                    while (num == 2) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ > ";
+                        cin >> num;
+
+                        if (num < 1 || num > 3) {
+                            while (num < 1 || num > 3) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num;
+                            }
+                        }
+                    }
                 }
             }
             if (num == 3) {
                 if (n3 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num;
+                    while (num == 3) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ > ";
+                        cin >> num;
+
+                        if (num < 1 || num > 3) {
+                            while (num < 1 || num > 3) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num;
+                            }
+                        }
+                    }
                 }
 
             }
+
+
             if (num == 1) {
                 n1++;
             }
@@ -1090,18 +2274,36 @@ int main()
                 if (n1 >= 1) {
                     cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
                     cin >> num;
+                    if (num < 1 || num > 3) {
+                        while (num < 1 || num > 3) {
+                            cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                            cin >> num;
+                        }
+                    }
                 }
             }
             if (num == 2) {
                 if (n2 >= 1) {
                     cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
                     cin >> num;
+                    if (num < 1 || num > 3) {
+                        while (num < 1 || num > 3) {
+                            cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                            cin >> num;
+                        }
+                    }
                 }
             }
             if (num == 3) {
                 if (n3 >= 1) {
                     cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
                     cin >> num;
+                    if (num < 1 || num > 3) {
+                        while (num < 1 || num > 3) {
+                            cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                            cin >> num;
+                        }
+                    }
                 }
 
             }
@@ -1115,217 +2317,60 @@ int main()
                 n3++;
             }
         }
-        if (num == 1) {
-            if (R1 == 1) {
-                HPP = 5;
-            }
-            if (R1 == 2) {
-                HPP = 5;
-            }
-            if (R1 == 3) {
-                HPP = 5;
-            }
-            if (R1 == 4) {
-                HPP = 5;
-            }
-            if (R1 == 5) {
-                HPP = 5;
-            }
-            if (R1 == 6) {
-                HPP = 5;
-            }
-            if (R1 == 7) {
-                HPP = 5;
-            }
-            if (R1 == 8) {
-                HPP = 5;
-            }
-            if (R1 == 9) {
-                HPP = 5;
-            }
-            if (R1 == 10) {
-                HPP = 5;
-            }
-            if (R1 == 11) {
-                HPP = 5;
-            }
-            if (R1 == 12) {
-                HPP = 5;
-            }
-            if (R1 == 13) {
-                HPP = 5;
-            }
-            if (R1 == 14) {
-                HPP = 5;
-            }
-            if (R1 == 15) {
-                HPP = 5;
-            }
-            if (R1 == 16) {
-                HPP = 5;
-            }
-            if (R1 == 17) {
-                HPP = 5;
-            }
-            if (R1 == 18) {
-                HPP = 5;
-            }
-            if (R1 == 19) {
-                HPP = 5;
-            }
-            if (R1 == 20) {
-                HPP = 5;
-            }
-            if (R1 == 21) {
-                HPP = 5;
-            }
-        }
-        if (num == 2) {
-            if (R2 == 1) {
-                HPP = 25;
-            }
-            if (R2 == 2) {
-                HPP = 25;
-            }
-            if (R2 == 3) {
-                HPP = 25;
-            }
-            if (R2 == 4) {
-                HPP = 25;
-            }
-            if (R2 == 5) {
-                HPP = 5;
-            }
-            if (R2 == 6) {
-                HPP = 5;
-            }
-            if (R2 == 7) {
-                HPP = 5;
-            }
-            if (R2 == 8) {
-                HPP = 5;
-            }
-            if (R2 == 9) {
-                HPP = 5;
-            }
-            if (R2 == 10) {
-                HPP = 5;
-            }
-            if (R2 == 11) {
-                HPP = 5;
-            }
-            if (R2 == 12) {
-                HPP = 5;
-            }
-            if (R2 == 13) {
-                HPP = 5;
-            }
-            if (R2 == 14) {
-                HPP = 5;
-            }
-            if (R2 == 15) {
-                HPP = 5;
-            }
-            if (R2 == 16) {
-                HPP = 5;
-            }
-            if (R2 == 17) {
-                HPP = 5;
-            }
-            if (R2 == 18) {
-                HPP = 5;
-            }
-            if (R2 == 19) {
-                HPP = 5;
-            }
-            if (R2 == 20) {
-                HPP = 5;
-            }
-            if (R2 == 21) {
-                HPP = 5;
-            }
-        }
-        if (num == 3) {
-            if (R3 == 1) {
-                HPP = 5;
-            }
-            if (R3 == 2) {
-                HPP = 5;
-            }
-            if (R3 == 3) {
-                HPP = 5;
-            }
-            if (R3 == 4) {
-                HPP = 5;
-            }
-            if (R3 == 5) {
-                HPP = 5;
-            }
-            if (R3 == 6) {
-                HPP = 5;
-            }
-            if (R3 == 7) {
-                HPP = 5;
-            }
-            if (R3 == 8) {
-                HPP = 5;
-            }
-            if (R3 == 9) {
-                HPP = 5;
-            }
-            if (R3 == 10) {
-                HPP = 5;
-            }
-            if (R3 == 11) {
-                HPP = 5;
-            }
-            if (R3 == 12) {
-                HPP = 5;
-            }
-            if (R3 == 13) {
-                HPP = 5;
-            }
-            if (R3 == 14) {
-                HPP = 5;
-            }
-            if (R3 == 15) {
-                HPP = 5;
-            }
-            if (R3 == 16) {
-                HPP = 5;
-            }
-            if (R3 == 17) {
-                HPP = 5;
-            }
-            if (R3 == 18) {
-                HPP = 5;
-            }
-            if (R3 == 19) {
-                HPP = 5;
-            }
-            if (R3 == 20) {
-                HPP = 5;
-            }
-            if (R3 == 21) {
-                HPP = 5;
-            }
-        }
+        
 
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl ;
         cout << " ";
         system("pause");
         system("cls");
 
+
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Hogwarts << endl << endl << endl;
-        cout << play1 << " ~~~ " << pee1;
-        cout << "                                                                   " << play2 << " ~~~ " << pee2 << endl;
-        cout << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << play1;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ " << pee1;
+        cout << "                                                                 ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << play2;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ ";
+        cout << pee2 << endl << endl;
+
         HP(HP1);
         cout << "                                                            ";
         HP2 = HP2 - HPP;
         HP(HP2);
+        cout << endl;
         if (i == 1)
         {
-            if (num == 1) {
+            if (num == 11 || num == 22 || num == 33) {
+                cout << "" << endl;
+                cout << " 1 ";
+                Kart1(R1);
+                cout << "                                                            ";
+                cout << " 1 ";
+                Kart1(R01);
+                cout << endl;
+                cout << " 2 ";
+                Kart1(R2);
+                cout << "                                                            ";
+                cout << " 2 ";
+                Kart1(R02);
+                cout << endl;
+                cout << " 3 ";
+                Kart1(R3);
+                cout << "                                                            ";
+                cout << " 3 ";
+                Kart1(R03);
+                cout << endl;
+                
+            }
+            if (n1 >= 1 && n2 < 1 && n3 < 1) {
                 cout << "" << endl;
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 1 ";
@@ -1348,7 +2393,57 @@ int main()
                 Kart1(R03);
                 cout << endl;
             }
-            if (num == 2) {
+            if (n1 >= 1 && n2 >= 1 && n3 < 1) {
+                cout << "" << endl;
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << " 1 ";
+                Kart1(R1);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 1 ";
+                Kart1(R01);
+                cout << endl;
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << " 2 ";
+                Kart1(R2);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 2 ";
+                Kart1(R02);
+                cout << endl;
+                cout << " 3 ";
+                Kart1(R3);
+                cout << "                                                            ";
+                cout << " 3 ";
+                Kart1(R03);
+                cout << endl;
+            }
+            if (n1 >= 1 && n3 >= 1 && n2 < 1) {
+                cout << "" << endl;
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << " 1 ";
+                Kart1(R1);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 1 ";
+                Kart1(R01);
+                cout << endl;
+                cout << " 2 ";
+                Kart1(R2);
+                cout << "                                                            ";
+                cout << " 2 ";
+                Kart1(R02);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << endl;
+                cout << " 3 ";
+                Kart1(R3);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 3 ";
+                Kart1(R03);
+                cout << endl;
+            }
+            if (n2 >= 1 && n1 < 1 && n3 < 1) {
                 cout << endl;
                 cout << " 1 ";
                 Kart1(R1);
@@ -1371,7 +2466,7 @@ int main()
                 Kart1(R03);
                 cout << endl;
             }
-            if (num == 3) {
+            if (n2 >= 1 && n3 >= 1 && n1 < 1) {
                 cout << endl;
                 cout << " 1 ";
                 Kart1(R1);
@@ -1379,8 +2474,10 @@ int main()
                 cout << " 1 ";
                 Kart1(R01);
                 cout << endl;
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 2 ";
                 Kart1(R2);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << "                                                            ";
                 cout << " 2 ";
                 Kart1(R02);
@@ -1621,17 +2718,39 @@ int main()
             }
         }
         if (i == 3) {
-            if (n1 >= 1 && n2 >= 1 && n3 >= 1) {
+
+            if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n01 >= 1 && n02 >= 1 ) {
                 cout << endl;
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 1 ";
                 Kart1(R1);
                 cout << "                                                            ";
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << " 1 ";
                 Kart1(R01);
                 cout << endl;
+                cout << " 2 ";
+                Kart1(R2);
+                cout << "                                                            ";
+                cout << " 2 ";
+                Kart1(R02);
+                cout << endl;
+                cout << " 3 ";
+                Kart1(R3);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 3 ";
+                Kart1(R03);
+                cout << endl;
+            }
+            if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n01 >= 1 && n03 >= 1) {
+                cout << endl;
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << " 1 ";
+                Kart1(R1);
+                cout << "                                                            ";
+                cout << " 1 ";
+                Kart1(R01);
+                cout << endl;
                 cout << " 2 ";
                 Kart1(R2);
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
@@ -1642,19 +2761,1274 @@ int main()
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 3 ";
                 Kart1(R3);
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << "                                                            ";
                 cout << " 3 ";
                 Kart1(R03);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << endl;
+            }
+            if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n02 >= 1 && n03 >= 1) {
+                cout << endl;
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << " 1 ";
+                Kart1(R1);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                cout << "                                                            ";
+                cout << " 1 ";
+                Kart1(R01);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                cout << endl;
+                cout << " 2 ";
+                Kart1(R2);
+                cout << "                                                            ";
+                cout << " 2 ";
+                Kart1(R02);
+                cout << endl;
+                cout << " 3 ";
+                Kart1(R3);
+                cout << "                                                            ";
+                cout << " 3 ";
+                Kart1(R03);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << endl;
             }
         }
         
         cout << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << Zak << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
         int num2;
         cin >> num2;
+        while (num2 == 11 || num2 == 22 || num2 == 33) {
+            if (num2 == 11) {
+                Kart(R01);
+            }
+            if (num2 == 22) {
+                Kart(R02);
+            }
+            if (num2 == 33) {
+                Kart(R03);
+            }
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+            cout << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+            cout << " ";
+            system("pause");
+            system("cls");
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << Hogwarts << endl << endl << endl;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ ";
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << play1;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ " << pee1;
+            cout << "                                                                 ~ ";
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << play2;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << " ~ ";
+            cout << pee2 << endl << endl;
+
+            HP(HP1);
+            cout << "                                                            ";
+            HP(HP2);
+            cout << endl;
+            if (i == 1)
+            {
+                if (num == 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (num == 2) {
+                    cout << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (num == 3) {
+                    cout << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+            }
+            if (i == 2) {
+                if (n1 >= 1 && n2 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n3 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n01 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n02 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n2 >= 1 && n3 >= 1 && n03 >= 1) {
+                    cout << "" << endl;
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+            }
+            if (i == 3) {
+
+                if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n01 >= 1 && n02 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n01 >= 1 && n03 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+                if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n02 >= 1 && n03 >= 1) {
+                    cout << endl;
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << " 1 ";
+                    Kart1(R1);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << "                                                            ";
+                    cout << " 1 ";
+                    Kart1(R01);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+                    cout << endl;
+                    cout << " 2 ";
+                    Kart1(R2);
+                    cout << "                                                            ";
+                    cout << " 2 ";
+                    Kart1(R02);
+                    cout << endl;
+                    cout << " 3 ";
+                    Kart1(R3);
+                    cout << "                                                            ";
+                    cout << " 3 ";
+                    Kart1(R03);
+                    SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+                    cout << endl;
+                }
+            }
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+            cout << endl;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+            cout << Zak << endl;
+            SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+            cin >> num2;
+
+        }
+        if (num2 < 1 || num2 > 3) {
+            while (num2 < 1 || num2 > 3) {
+                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                cin >> num2;
+            }
+        }
         if (i == 1) {
+            if (num == 1 || num == 2 || num == 3) {
+                if (R1 == 6 || R2 == 6 || R3 ==  6 || R1 == 10 || R2 == 10 || R3 == 10 || R1 == 17 || R2 == 17 || R3 == 17) {
+                    if (num2 == 1) {
+                        if (R01 == 1) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R01 == 2) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 3) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R01 == 4) {
+                            if (pers2 == 6) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R01 == 5) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 6) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R01 == 7) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 8) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R01 == 9) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R01 == 10) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R01 == 11) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 12) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 13) {
+                            if (pers2 == 8) {
+                                if (pers1 == 1) {
+                                    HPP2 = 0;
+                                }
+                                else {
+                                    HPP2 = 100;
+                                }
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R01 == 14) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 15) {
+                            cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                            cout << " Введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num == 1) {
+                                n1++;
+                            }
+                            if (num == 2) {
+                                n2++;
+                            }
+                            if (num == 3) {
+                                n3++;
+                            }
+                        }
+                        if (R01 == 16) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 17) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R01 == 18) {
+                            HPP2 = 0;
+                        }
+                        if (R01 == 19) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                    }
+                    if (num2 == 2) {
+                        if (R02 == 1) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R02 == 2) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 3) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R02 == 4) {
+                            if (pers2 == 6) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R02 == 5) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 6) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R02 == 7) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 8) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R02 == 9) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R02 == 10) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R02 == 11) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 12) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 13) {
+                            if (pers2 == 8) {
+                                if (pers1 == 1) {
+                                    HPP2 = 0;
+                                }
+                                else {
+                                    HPP2 = 100;
+                                }
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R02 == 14) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 15) {
+                            cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                            cout << " Введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num == 1) {
+                                n1++;
+                            }
+                            if (num == 2) {
+                                n2++;
+                            }
+                            if (num == 3) {
+                                n3++;
+                            }
+                        }
+                        if (R02 == 16) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 17) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R02 == 18) {
+                            HPP2 = 0;
+                        }
+                        if (R02 == 19) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                    }
+                    if (num2 == 3) {
+                        if (R03 == 1) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R03 == 2) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 3) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R03 == 4) {
+                            if (pers2 == 6) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R03 == 5) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 6) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R03 == 7) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 8) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                        if (R03 == 9) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R03 == 10) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R03 == 11) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 12) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 13) {
+                            if (pers2 == 8) {
+                                if (pers1 == 1) {
+                                    HPP2 = 0;
+                                }
+                                else {
+                                    HPP2 = 100;
+                                }
+                            }
+                            else {
+                                HPP2 = 0;
+                            }
+                        }
+                        if (R03 == 14) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 15) {
+                            cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                            cout << " Введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num == 1) {
+                                n1++;
+                            }
+                            if (num == 2) {
+                                n2++;
+                            }
+                            if (num == 3) {
+                                n3++;
+                            }
+                        }
+                        if (R03 == 16) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 17) {
+                            cout << " Ви використали захисне закляття." << endl;
+                            cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                        }
+                        if (R03 == 18) {
+                            HPP2 = 0;
+                        }
+                        if (R03 == 19) {
+                            cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                            cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                            cin >> num2;
+                            if (num2 == 1) {
+                                n01++;
+                            }
+                            if (num2 == 2) {
+                                n02++;
+                            }
+                            if (num2 == 3) {
+                                n03++;
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                if (num2 == 1) {
+                    if (R01 == 1) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R01 == 2) {
+                        HPP2 = 10;
+                    }
+                    if (R01 == 3) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R01 == 4) {
+                        if (pers2 == 6) {
+                            HPP2 = 40;
+                        }
+                        else {
+                            HPP2 = 20;
+                        }
+                    }
+                    if (R01 == 5) {
+                        HPP2 = 5;
+                    }
+                    if (R01 == 6) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R01 == 7) {
+                        HPP2 = rand() % 20 + 10;
+                    }
+                    if (R01 == 8) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R01 == 9) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R01 == 10) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R01 == 11) {
+                        HPP2 = 5;
+                    }
+                    if (R01 == 12) {
+                        HPP2 = 5;
+                    }
+                    if (R01 == 13) {
+                        if (pers2 == 8) {
+                            if (pers1 == 1) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 100;
+                            }
+                        }
+                        else {
+                            HPP2 = 0;
+                        }
+                    }
+                    if (R01 == 14) {
+                        HPP2 = 40;
+                    }
+                    if (R01 == 15) {
+                        cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                        cout << " Введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num == 1) {
+                            n1++;
+                        }
+                        if (num == 2) {
+                            n2++;
+                        }
+                        if (num == 3) {
+                            n3++;
+                        }
+                    }
+                    if (R01 == 16) {
+                        HPP2 = 20;
+                    }
+                    if (R01 == 17) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R01 == 18) {
+                        HPP2 = 20;
+                    }
+                    if (R01 == 19) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                }
+                if (num2 == 2) {
+                    if (R02 == 1) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R02 == 2) {
+                        HPP2 = 10;
+                    }
+                    if (R02 == 3) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R02 == 4) {
+                        if (pers2 == 6) {
+                            HPP2 = 40;
+                        }
+                        else {
+                            HPP2 = 20;
+                        }
+                    }
+                    if (R02 == 5) {
+                        HPP2 = 5;
+                    }
+                    if (R02 == 6) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R02 == 7) {
+                        HPP2 = rand() % 20 + 10;
+                    }
+                    if (R02 == 8) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R02 == 9) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R02 == 10) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R02 == 11) {
+                        HPP2 = 5;
+                    }
+                    if (R02 == 12) {
+                        HPP2 = 5;
+                    }
+                    if (R02 == 13) {
+                        if (pers2 == 8) {
+                            if (pers1 == 1) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 100;
+                            }
+                        }
+                        else {
+                            HPP2 = 0;
+                        }
+                    }
+                    if (R02 == 14) {
+                        HPP2 = 40;
+                    }
+                    if (R02 == 15) {
+                        cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                        cout << " Введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num == 1) {
+                            n1++;
+                        }
+                        if (num == 2) {
+                            n2++;
+                        }
+                        if (num == 3) {
+                            n3++;
+                        }
+                    }
+                    if (R02 == 16) {
+                        HPP2 = 20;
+                    }
+                    if (R02 == 17) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R02 == 18) {
+                        HPP2 = 20;
+                    }
+                    if (R02 == 19) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                }
+                if (num2 == 3) {
+                    if (R03 == 1) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R03 == 2) {
+                        HPP2 = 10;
+                    }
+                    if (R03 == 3) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R03 == 4) {
+                        if (pers2 == 6) {
+                            HPP2 = 40;
+                        }
+                        else {
+                            HPP2 = 20;
+                        }
+                    }
+                    if (R03 == 5) {
+                        HPP2 = 5;
+                    }
+                    if (R03 == 6) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R03 == 7) {
+                        HPP2 = rand() % 20 + 10;
+                    }
+                    if (R03 == 8) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                    if (R03 == 9) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R03 == 10) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R03 == 11) {
+                        HPP2 = 5;
+                    }
+                    if (R03 == 12) {
+                        HPP2 = 5;
+                    }
+                    if (R03 == 13) {
+                        if (pers2 == 8) {
+                            if (pers1 == 1) {
+                                HPP2 = 0;
+                            }
+                            else {
+                                HPP2 = 100;
+                            }
+                        }
+                        else {
+                            HPP2 = 0;
+                        }
+                    }
+                    if (R03 == 14) {
+                        HPP2 = 40;
+                    }
+                    if (R03 == 15) {
+                        cout << " Це закляття дозволяє використовувати закляття противника проти нього самого. " << endl;                   cin >> num;
+                        cout << " Введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num == 1) {
+                            n1++;
+                        }
+                        if (num == 2) {
+                            n2++;
+                        }
+                        if (num == 3) {
+                            n3++;
+                        }
+                    }
+                    if (R03 == 16) {
+                        HPP2 = 20;
+                    }
+                    if (R03 == 17) {
+                        cout << " Ви використали захисне закляття." << endl;
+                        cout << " Наступне закляття введенне гравцем " << play1 << " не завдасть вам урону. " << endl;
+                    }
+                    if (R03 == 18) {
+                        HPP2 = 20;
+                    }
+                    if (R03 == 19) {
+                        cout << " Гравець " << play1 << " пропускає хід. " << endl;
+                        cout << " Гравець " << play2 << " введіть закляття яке хочете використати ~~ > ";
+                        cin >> num2;
+                        if (num2 == 1) {
+                            n01++;
+                        }
+                        if (num2 == 2) {
+                            n02++;
+                        }
+                        if (num2 == 3) {
+                            n03++;
+                        }
+                    }
+                }
+            }
+            
             if (num2 == 1) {
                 n01++;
             }
@@ -1668,20 +4042,47 @@ int main()
         if (i == 2) {
             if (num2 == 1) {
                 if (n01 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num2;
+                    while (num2 == 1) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
+                        cin >> num2;
+
+                        if (num2 < 1 || num2 > 3) {
+                            while (num2 < 1 || num2 > 3) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num2;
+                            }
+                        }
+                    }
                 }
             }
             if (num2 == 2) {
                 if (n02 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num2;
+                    while (num2 == 2) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
+                        cin >> num2;
+
+                        if (num2 < 1 || num2 > 3) {
+                            while (num2 < 1 || num2 > 3) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num2;
+                            }
+                        }
+                    }
                 }
             }
             if (num2 == 3) {
                 if (n03 >= 1) {
-                    cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
-                    cin >> num2;
+                    while (num2 == 3) {
+                        cout << "Це закляття вже було використано, виберіть інше закляття ~ >";
+                        cin >> num2;
+
+                        if (num2 < 1 || num2 > 3) {
+                            while (num2 < 1 || num2 > 3) {
+                                cout << "Такого закляття не існує, виберіть існуюче закляття ~ > ";
+                                cin >> num2;
+                            }
+                        }
+                    }
                 }
             }
             if (num2 == 1) {
@@ -1723,212 +4124,35 @@ int main()
                 n03++;
             }
         }
-        if (num2 == 1) {
-            if (R01 == 1) {
-                HPP2 = 5;
-            }
-            if (R01 == 2) {
-                HPP2 = 5;
-            }
-            if (R01 == 3) {
-                HPP2 = 5;
-            }
-            if (R01 == 4) {
-                HPP2 = 5;
-            }
-            if (R01 == 5) {
-                HPP2 = 5;
-            }
-            if (R01 == 6) {
-                HPP2 = 5;
-            }
-            if (R01 == 7) {
-                HPP2 = 5;
-            }
-            if (R01 == 8) {
-                HPP2 = 5;
-            }
-            if (R01 == 9) {
-                HPP2 = 5;
-            }
-            if (R01 == 10) {
-                HPP2 = 5;
-            }
-            if (R01 == 11) {
-                HPP2 = 5;
-            }
-            if (R01 == 12) {
-                HPP2 = 5;
-            }
-            if (R01 == 13) {
-                HPP2 = 5;
-            }
-            if (R01 == 14) {
-                HPP2 = 5;
-            }
-            if (R01 == 15) {
-                HPP2 = 5;
-            }
-            if (R01 == 16) {
-                HPP2 = 5;
-            }
-            if (R01 == 17) {
-                HPP2 = 5;
-            }
-            if (R01 == 18) {
-                HPP2 = 5;
-            }
-            if (R01 == 19) {
-                HPP2 = 5;
-            }
-            if (R01 == 20) {
-                HPP2 = 5;
-            }
-            if (R01 == 21) {
-                HPP2 = 5;
-            }
-        }
-        if (num2 == 2) {
-            if (R02 == 1) {
-                HPP2 = 25;
-            }
-            if (R02 == 2) {
-                HPP2 = 25;
-            }
-            if (R02 == 3) {
-                HPP2 = 25;
-            }
-            if (R02 == 4) {
-                HPP2 = 25;
-            }
-            if (R02 == 5) {
-                HPP2 = 5;
-            }
-            if (R02 == 6) {
-                HPP2 = 5;
-            }
-            if (R02 == 7) {
-                HPP2 = 5;
-            }
-            if (R02 == 8) {
-                HPP2 = 5;
-            }
-            if (R02 == 9) {
-                HPP2 = 5;
-            }
-            if (R02 == 10) {
-                HPP2 = 5;
-            }
-            if (R02 == 11) {
-                HPP2 = 5;
-            }
-            if (R02 == 12) {
-                HPP2 = 5;
-            }
-            if (R02 == 13) {
-                HPP2 = 5;
-            }
-            if (R02 == 14) {
-                HPP2 = 5;
-            }
-            if (R02 == 15) {
-                HPP2 = 5;
-            }
-            if (R02 == 16) {
-                HPP2 = 5;
-            }
-            if (R02 == 17) {
-                HPP2 = 5;
-            }
-            if (R02 == 18) {
-                HPP2 = 5;
-            }
-            if (R02 == 19) {
-                HPP2 = 5;
-            }
-            if (R02 == 20) {
-                HPP2 = 5;
-            }
-            if (R02 == 21) {
-                HPP2 = 5;
-            }
-        }
-        if (num2 == 3) {
-            if (R03 == 1) {
-                HPP2 = 5;
-            }
-            if (R03 == 2) {
-                HPP2 = 5;
-            }
-            if (R03 == 3) {
-                HPP2 = 5;
-            }
-            if (R03 == 4) {
-                HPP2 = 5;
-            }
-            if (R03 == 5) {
-                HPP2 = 5;
-            }
-            if (R03 == 6) {
-                HPP2 = 5;
-            }
-            if (R03 == 7) {
-                HPP2 = 5;
-            }
-            if (R03 == 8) {
-                HPP2 = 5;
-            }
-            if (R03 == 9) {
-                HPP2 = 5;
-            }
-            if (R03 == 10) {
-                HPP2 = 5;
-            }
-            if (R03 == 11) {
-                HPP2 = 5;
-            }
-            if (R03 == 12) {
-                HPP2 = 5;
-            }
-            if (R03 == 13) {
-                HPP2 = 5;
-            }
-            if (R03 == 14) {
-                HPP2 = 5;
-            }
-            if (R03 == 15) {
-                HPP2 = 5;
-            }
-            if (R03 == 16) {
-                HPP2 = 5;
-            }
-            if (R03 == 17) {
-                HPP2 = 5;
-            }
-            if (R03 == 18) {
-                HPP2 = 5;
-            }
-            if (R03 == 19) {
-                HPP2 = 5;
-            }
-            if (R03 == 20) {
-                HPP2 = 5;
-            }
-            if (R03 == 21) {
-                HPP2 = 5;
-            }
-        }
+        
+
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
+        cout << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+        cout << " ";
         system("pause");
         system("cls");
 
+
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         cout << Hogwarts << endl << endl << endl;
-        cout << play1 << " ~~~ " << pee1;
-        cout << "                                                                   " << play2 << " ~~~ " << pee2 << endl;
-        cout << endl;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << play1;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ " << pee1;
+        cout << "                                                                 ~ ";
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
+        cout << play2;
+        SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 7));
+        cout << " ~ ";
+        cout << pee2 << endl << endl;
+
         HP1 = HP1 - HPP2;
         HP(HP1);
         cout << "                                                            ";
         HP(HP2);
+        cout << endl;
         SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
         if (i == 1) {
             if (num == 1 && num2 == 1) {
@@ -2372,31 +4596,27 @@ int main()
             }
         }
         if (i == 3) {
-            if (n1 >= 1 && n2 >= 1 && n3 >= 1) {
+            if (n1 >= 1 && n2 >= 1 && n3 >= 1 && n01 >= 1 && n02 >= 1 && n03 >= 1) {
                 cout << endl;
                 SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 1 ";
                 Kart1(R1);
                 cout << "                                                            ";
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << " 1 ";
                 Kart1(R01);
                 cout << endl;
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 2 ";
                 Kart1(R2);
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << "                                                            ";
                 cout << " 2 ";
                 Kart1(R02);
                 cout << endl;
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 8));
                 cout << " 3 ";
                 Kart1(R3);
-                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << "                                                            ";
                 cout << " 3 ";
                 Kart1(R03);
+                SetConsoleTextAttribute(hConsole, WORD(0 << 0 | 15));
                 cout << endl;
             }
         }
