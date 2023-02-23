@@ -1,3 +1,0 @@
-Goodbye world
-It is a normal string
-

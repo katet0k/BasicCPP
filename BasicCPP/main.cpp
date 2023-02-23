@@ -1,8 +1,8 @@
 #include <iostream>
-#include <conio.h>
-#include <Windows.h>
 #include <fstream>
 #include <string>
+#include <conio.h>
+#include <Windows.h>
 using namespace std;
 
 int main()
@@ -38,66 +38,151 @@ int main()
 
         switch (switch_on)
         {
-        case '0': {
-            break;
-        }break;
-        case '1': {
-
+        case '1':
+        {
             string path1 = "File1.txt";
             string path2 = "File2.txt";
-            fstream File1;
-            fstream File2;
-            File1.open(path1, ios::out);
-            File2.open(path2, ios::out);
-            char str[35] = {
-                "Hello world\n"
-                "It is a normal string\n"
-            };
-            char str1[37] = {
-                "Goodbye world\n"
-                "It is a normal string\n"
-            };
-            char str0[5];
-            char A = 65;
-            char b = 97;
-            int q = 0;
-            if (!File1.is_open()) {
-                cout << " Error " << endl;
-            }
-            else {
-                File1 << str << endl;
+            ifstream input_file(path1);
+            ofstream output_file(path2);
+           
+            if (!input_file || !output_file)
+            {
+                cout << "Could not open files\n";
+                
             }
 
-            if (!File2.is_open()) {
-                cout << " Error " << endl;
-            }
-            else {
-                File2 << str1 << endl;
-            }
-            for (size_t i = 0; i < strlen(str); i++)
-            {
-                if (str[i] == str1[i]) {
-                    
+            string line;
+            string last_line;
+
+            while (getline(input_file, line)) {
+                if (!input_file.eof()) {
+                    output_file << line << "\n";
                 }
                 else {
-                    str0[i] = str1[i];
+                    last_line = line;
                 }
             }
-            
 
-            cout << str0 << endl;
-            File1.close();
-            File2.close();
+            input_file.close();
+            output_file.close();
+
+            if (!last_line.empty()) {
+                cout << "Last line was \"" << last_line << "\" and is deleted\n";
+            }
+            else {
+                cout << "File was empty, nothing deleted\n";
+            }
+            system("pause");
+
+        }break;
+        case '2':
+        {
+            string path1 = "File1.txt";
+            ifstream input_file(path1);
+
+            if (!input_file) {
+                cout << "Could not open file\n";
+                system("pause");
+                break;
+            }
+
+            string line;
+            size_t max_length = 0;
+
+            while (getline(input_file, line)) {
+                size_t length = line.length();
+                if (length > max_length) {
+                    max_length = length;
+                }
+            }
+
+            input_file.close();
+
+            if (max_length > 0) {
+                cout << "Max length: " << max_length << "\n";
+            }
+            else {
+                cout << "File was empty, max length is 0\n";
+            }
 
             system("pause");
-        
         }break;
+        case '3':
+        {
+            string word_to_count = "example";
+            string path1 = "File1.txt";
+            ifstream input_file(path1);
 
-        default:
-            break;
+            if (!input_file) {
+                cout << "Could not open file " <<endl;
+                system("pause");
+                break;
+            }
+
+            string line;
+            int count = 0;
+
+            while (getline(input_file, line)) {
+                size_t pos = 0;
+                while ((pos = line.find(word_to_count, pos)) != pos) {
+                    ++count;
+                    pos += word_to_count.size();
+                }
+            }
+
+            input_file.close();
+
+            cout << "The word '" << word_to_count << "' appeared " << count << " times in the file " << path1 << endl;
+
+            system("pause");
+        }break;
+        case '4':
+        {
+            string old_word, new_word, filename;
+            cout << "Enter the name of the input file: ";
+            cin >> filename;
+            cout << "Enter the word to be replaced: ";
+            cin >> old_word;
+            cout << "Enter the new word: ";
+            cin >> new_word;
+
+            ifstream input_file(filename);
+            if (!input_file) {
+                cout << "Could not open file " << filename << endl;
+
+                system("pause");
+                break;
+            }
+
+            string line, new_file_contents;
+            while (getline(input_file, line)) {
+                size_t pos = 0;
+                while ((pos = line.find(old_word, pos)) != pos) {
+                    line.replace(pos, old_word.size(), new_word);
+                    pos += new_word.size();
+                }
+                new_file_contents += line + '\n';
+            }
+
+            input_file.close();
+
+            ofstream output_file(filename);
+            if (!output_file) {
+                cout << "Could not open file " << filename << " for writing" << endl;
+
+                system("pause");
+                break;
+            }
+
+            output_file << new_file_contents;
+            output_file.close();
+
+            cout << "All occurrences of '" << old_word << "' have been replaced with '" << new_word << "' in the file " << filename << endl;
+
+            system("pause");
+        }break;
         }
-    
-    } while (switch_on != '0');
 
-	return 0;
+    } while (switch_on != '0');
+    return 0;
 }
